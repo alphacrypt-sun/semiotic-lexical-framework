@@ -1,0 +1,605 @@
+[
+  {
+    "character_id": "A",
+    "source": "a",
+    "target": "ah",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.9,
+    "language": "eng"
+  },
+  {
+    "character_id": "B",
+    "source": "b",
+    "target": "p",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.88,
+    "language": "eng"
+  },
+  {
+    "character_id": "C",
+    "source": "c",
+    "target": "k",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.95,
+    "language": "eng"
+  },
+  {
+    "character_id": "C",
+    "source": "c",
+    "target": "s",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.85,
+    "language": "eng"
+  },
+  {
+    "character_id": "D",
+    "source": "d",
+    "target": "t",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.88,
+    "language": "eng"
+  },
+  {
+    "character_id": "E",
+    "source": "e",
+    "target": "eh",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.9,
+    "language": "eng"
+  },
+  {
+    "character_id": "F",
+    "source": "f",
+    "target": "ph",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.95,
+    "language": "eng"
+  },
+  {
+    "character_id": "F",
+    "source": "f",
+    "target": "v",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.82,
+    "language": "eng"
+  },
+  {
+    "character_id": "G",
+    "source": "g",
+    "target": "k",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.92,
+    "language": "eng"
+  },
+  {
+    "character_id": "G",
+    "source": "g",
+    "target": "j",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.8,
+    "language": "eng"
+  },
+  {
+    "character_id": "H",
+    "source": "h",
+    "target": "",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.75,
+    "language": "eng"
+  },
+  {
+    "character_id": "I",
+    "source": "i",
+    "target": "ee",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.9,
+    "language": "eng"
+  },
+  {
+    "character_id": "J",
+    "source": "j",
+    "target": "y",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.87,
+    "language": "eng"
+  },
+  {
+    "character_id": "J",
+    "source": "j",
+    "target": "h",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.83,
+    "language": "eng"
+  },
+  {
+    "character_id": "K",
+    "source": "k",
+    "target": "c",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.95,
+    "language": "eng"
+  },
+  {
+    "character_id": "K",
+    "source": "k",
+    "target": "q",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.8,
+    "language": "eng"
+  },
+  {
+    "character_id": "L",
+    "source": "l",
+    "target": "r",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.77,
+    "language": "eng"
+  },
+  {
+    "character_id": "M",
+    "source": "m",
+    "target": "n",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.78,
+    "language": "eng"
+  },
+  {
+    "character_id": "N",
+    "source": "n",
+    "target": "m",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.78,
+    "language": "eng"
+  },
+  {
+    "character_id": "O",
+    "source": "o",
+    "target": "aw",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.82,
+    "language": "eng"
+  },
+  {
+    "character_id": "P",
+    "source": "p",
+    "target": "b",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.88,
+    "language": "eng"
+  },
+  {
+    "character_id": "Q",
+    "source": "q",
+    "target": "k",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.93,
+    "language": "eng"
+  },
+  {
+    "character_id": "R",
+    "source": "r",
+    "target": "l",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.77,
+    "language": "eng"
+  },
+  {
+    "character_id": "S",
+    "source": "s",
+    "target": "z",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.86,
+    "language": "eng"
+  },
+  {
+    "character_id": "S",
+    "source": "s",
+    "target": "c",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.8,
+    "language": "eng"
+  },
+  {
+    "character_id": "T",
+    "source": "t",
+    "target": "d",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.88,
+    "language": "eng"
+  },
+  {
+    "character_id": "U",
+    "source": "u",
+    "target": "oo",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.9,
+    "language": "eng"
+  },
+  {
+    "character_id": "V",
+    "source": "v",
+    "target": "b",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.8,
+    "language": "eng"
+  },
+  {
+    "character_id": "W",
+    "source": "w",
+    "target": "v",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.82,
+    "language": "eng"
+  },
+  {
+    "character_id": "X",
+    "source": "x",
+    "target": "ks",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.95,
+    "language": "eng"
+  },
+  {
+    "character_id": "Y",
+    "source": "y",
+    "target": "j",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.83,
+    "language": "eng"
+  },
+  {
+    "character_id": "Z",
+    "source": "z",
+    "target": "s",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.86,
+    "language": "eng"
+  },
+  {
+    "character_id": "CH",
+    "source": "ch",
+    "target": "k",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.9,
+    "language": "eng"
+  },
+  {
+    "character_id": "CH",
+    "source": "ch",
+    "target": "sh",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.88,
+    "language": "eng"
+  },
+  {
+    "character_id": "SH",
+    "source": "sh",
+    "target": "ch",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.8,
+    "language": "eng"
+  },
+  {
+    "character_id": "PH",
+    "source": "ph",
+    "target": "f",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.97,
+    "language": "eng"
+  },
+  {
+    "character_id": "GH",
+    "source": "gh",
+    "target": "f",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.85,
+    "language": "eng"
+  },
+  {
+    "character_id": "GN",
+    "source": "gn",
+    "target": "n",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.8,
+    "language": "eng"
+  },
+  {
+    "character_id": "KN",
+    "source": "kn",
+    "target": "n",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.8,
+    "language": "eng"
+  },
+  {
+    "character_id": "WR",
+    "source": "wr",
+    "target": "r",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.8,
+    "language": "eng"
+  },
+  {
+    "character_id": "PS",
+    "source": "ps",
+    "target": "s",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.8,
+    "language": "eng"
+  },
+  {
+    "character_id": "SC",
+    "source": "sc",
+    "target": "s",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.78,
+    "language": "eng"
+  },
+  {
+    "character_id": "QU",
+    "source": "qu",
+    "target": "kw",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.92,
+    "language": "eng"
+  },
+  {
+    "character_id": "QU",
+    "source": "qu",
+    "target": "k",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.85,
+    "language": "eng"
+  },
+  {
+    "character_id": "CI",
+    "source": "ci",
+    "target": "sh",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.78,
+    "language": "eng"
+  },
+  {
+    "character_id": "TI",
+    "source": "ti",
+    "target": "sh",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.78,
+    "language": "eng"
+  },
+  {
+    "character_id": "DG",
+    "source": "dg",
+    "target": "j",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.85,
+    "language": "eng"
+  },
+  {
+    "character_id": "TH",
+    "source": "th",
+    "target": "t",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.8,
+    "language": "eng"
+  },
+  {
+    "character_id": "TH",
+    "source": "th",
+    "target": "dh",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.82,
+    "language": "eng"
+  },
+  {
+    "character_id": "WH",
+    "source": "wh",
+    "target": "w",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.8,
+    "language": "eng"
+  },
+  {
+    "character_id": "WH",
+    "source": "wh",
+    "target": "h",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.75,
+    "language": "eng"
+  },
+  {
+    "character_id": "OU",
+    "source": "ou",
+    "target": "ow",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.85,
+    "language": "eng"
+  },
+  {
+    "character_id": "OW",
+    "source": "ow",
+    "target": "ou",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.85,
+    "language": "eng"
+  },
+  {
+    "character_id": "EA",
+    "source": "ea",
+    "target": "ee",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.82,
+    "language": "eng"
+  },
+  {
+    "character_id": "EE",
+    "source": "ee",
+    "target": "i",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.8,
+    "language": "eng"
+  },
+  {
+    "character_id": "OO",
+    "source": "oo",
+    "target": "u",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.8,
+    "language": "eng"
+  },
+  {
+    "character_id": "AI",
+    "source": "ai",
+    "target": "ay",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.83,
+    "language": "eng"
+  },
+  {
+    "character_id": "AY",
+    "source": "ay",
+    "target": "ai",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.83,
+    "language": "eng"
+  },
+  {
+    "character_id": "EI",
+    "source": "ei",
+    "target": "ay",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.8,
+    "language": "eng"
+  },
+  {
+    "character_id": "IE",
+    "source": "ie",
+    "target": "ee",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.8,
+    "language": "eng"
+  },
+  {
+    "character_id": "OA",
+    "source": "oa",
+    "target": "oh",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.82,
+    "language": "eng"
+  },
+  {
+    "character_id": "OI",
+    "source": "oi",
+    "target": "oy",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.85,
+    "language": "eng"
+  },
+  {
+    "character_id": "OY",
+    "source": "oy",
+    "target": "oi",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.85,
+    "language": "eng"
+  },
+  {
+    "character_id": "AU",
+    "source": "au",
+    "target": "aw",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.82,
+    "language": "eng"
+  },
+  {
+    "character_id": "EU",
+    "source": "eu",
+    "target": "yoo",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.78,
+    "language": "eng"
+  },
+  {
+    "character_id": "GH#",
+    "source": "gh",
+    "target": "",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.7,
+    "language": "eng"
+  },
+  {
+    "character_id": "RK",
+    "source": "rk",
+    "target": "rkh",
+    "context": "phonetic similarity",
+    "method": "phonetic",
+    "weight": 0.7,
+    "language": "eng"
+  }
+]

@@ -1,0 +1,5 @@
+[
+  {"character_id": "A", "source_phoneme": "/æ/", "target_meaning": "man", "phonological_context": "initial", "sound_symbolic_note": "open vowel", "language": "en", "weight": 0.95},
+  {"character_id": "S", "source_phoneme": "/s/", "target_meaning": "snake", "phonological_context": "initial", "sound_symbolic_note": "hissing sound", "language": "en", "weight": 0.95},
+  {"character_id": "A", "source_phoneme": "/a/", "target_meaning": "ren", "phonological_context": "stressed", "sound_symbolic_note": "Chinese pinyin", "language": "zh", "weight": 0.9}
+]

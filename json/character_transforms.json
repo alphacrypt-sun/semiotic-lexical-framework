@@ -1,0 +1,3556 @@
+[
+  {
+    "character_id": "A",
+    "character_transforms": [
+      {
+        "source": "a",
+        "target": "man",
+        "context": "English symbolic meaning",
+        "method": "symbolic",
+        "weight": 1.0
+      },
+      {
+        "source": "a",
+        "target": "ren",
+        "context": "Chinese (人)",
+        "method": "symbolic",
+        "weight": 0.9,
+        "logographic_ref": "man"
+      },
+      {
+        "source": "a",
+        "target": "hito",
+        "context": "Japanese (人)",
+        "method": "symbolic",
+        "weight": 0.85,
+        "logographic_ref": "man"
+      },
+      {
+        "source": "a",
+        "target": "first",
+        "context": "Chinese/Japanese",
+        "method": "symbolic",
+        "weight": 0.75
+      },
+      {
+        "source": "a",
+        "target": "yi",
+        "context": "Chinese (一)",
+        "method": "symbolic",
+        "weight": 0.9,
+        "logographic_ref": "first"
+      },
+      {
+        "source": "a",
+        "target": "ichi",
+        "context": "Japanese (一)",
+        "method": "symbolic",
+        "weight": 0.85,
+        "logographic_ref": "first"
+      },
+      {
+        "source": "a",
+        "target": "origin",
+        "context": "Egyptian",
+        "method": "symbolic",
+        "weight": 0.75
+      },
+      {
+        "source": "a",
+        "target": "shi",
+        "context": "Chinese (始)",
+        "method": "symbolic",
+        "weight": 0.85,
+        "logographic_ref": "origin"
+      },
+      {
+        "source": "a",
+        "target": "hajime",
+        "context": "Japanese (始)",
+        "method": "symbolic",
+        "weight": 0.8,
+        "logographic_ref": "origin"
+      },
+      {
+        "source": "a",
+        "target": "apple",
+        "context": "Christian/Greek",
+        "method": "symbolic",
+        "weight": 0.75
+      },
+      {
+        "source": "a",
+        "target": "guo",
+        "context": "Chinese (果)",
+        "method": "symbolic",
+        "weight": 0.75,
+        "logographic_ref": "apple"
+      },
+      {
+        "source": "a",
+        "target": "ka",
+        "context": "Japanese (果)",
+        "method": "symbolic",
+        "weight": 0.7,
+        "logographic_ref": "apple"
+      },
+      {
+        "source": "a",
+        "target": "divinity",
+        "context": "Christian",
+        "method": "symbolic",
+        "weight": 0.85
+      },
+      {
+        "source": "a",
+        "target": "shen",
+        "context": "Chinese (神)",
+        "method": "symbolic",
+        "weight": 0.85,
+        "logographic_ref": "divinity"
+      },
+      {
+        "source": "a",
+        "target": "kami",
+        "context": "Japanese (神)",
+        "method": "symbolic",
+        "weight": 0.8,
+        "logographic_ref": "divinity"
+      },
+      {
+        "source": "a",
+        "target": "bull",
+        "context": "Egyptian",
+        "method": "symbolic",
+        "weight": 0.85
+      },
+      {
+        "source": "a",
+        "target": "alpha",
+        "context": "Greek",
+        "method": "symbolic",
+        "weight": 0.9
+      },
+      {
+        "source": "a",
+        "target": "ankh",
+        "context": "Egyptian",
+        "method": "symbolic",
+        "weight": 0.8
+      },
+      {
+        "source": "a",
+        "target": "aum",
+        "context": "Hindu",
+        "method": "symbolic",
+        "weight": 0.85
+      },
+      {
+        "source": "a",
+        "target": "ask",
+        "context": "Norse (first man)",
+        "method": "symbolic",
+        "weight": 0.8
+      }
+    ]
+  },
+  {
+    "character_id": "B",
+    "character_transforms": [
+      {
+        "source": "b",
+        "target": "house",
+        "context": "Phoenician",
+        "method": "symbolic",
+        "weight": 0.8
+      },
+      {
+        "source": "b",
+        "target": "hu",
+        "context": "Chinese (戶)",
+        "method": "symbolic",
+        "weight": 0.85,
+        "logographic_ref": "house"
+      },
+      {
+        "source": "b",
+        "target": "duality",
+        "context": "Greek",
+        "method": "symbolic",
+        "weight": 0.85
+      },
+      {
+        "source": "b",
+        "target": "er",
+        "context": "Chinese (二)",
+        "method": "symbolic",
+        "weight": 0.9,
+        "logographic_ref": "duality"
+      },
+      {
+        "source": "b",
+        "target": "ni",
+        "context": "Japanese (二)",
+        "method": "symbolic",
+        "weight": 0.85,
+        "logographic_ref": "duality"
+      },
+      {
+        "source": "b",
+        "target": "dick",
+        "context": "SLF symbolic",
+        "method": "symbolic",
+        "weight": 0.9
+      },
+      {
+        "source": "b",
+        "target": "gifttogod",
+        "context": "SLF symbolic",
+        "method": "symbolic",
+        "weight": 0.8
+      },
+      {
+        "source": "b",
+        "target": "zeng",
+        "context": "Chinese (贈)",
+        "method": "symbolic",
+        "weight": 0.75,
+        "logographic_ref": "gifttogod"
+      },
+      {
+        "source": "b",
+        "target": "giftfromgod",
+        "context": "SLF symbolic",
+        "method": "symbolic",
+        "weight": 0.85
+      },
+      {
+        "source": "b",
+        "target": "gift",
+        "context": "SLF symbolic",
+        "method": "symbolic",
+        "weight": 1.0
+      },
+      {
+        "source": "b",
+        "target": "musicnote",
+        "context": "SLF symbolic",
+        "method": "symbolic",
+        "weight": 0.85
+      },
+      {
+        "source": "b",
+        "target": "yin",
+        "context": "Chinese (音)",
+        "method": "symbolic",
+        "weight": 0.8,
+        "logographic_ref": "musicnote"
+      },
+      {
+        "source": "b",
+        "target": "on",
+        "context": "Japanese (音)",
+        "method": "symbolic",
+        "weight": 0.8,
+        "logographic_ref": "musicnote"
+      },
+      {
+        "source": "b",
+        "target": "book",
+        "context": "Beth as house of wisdom",
+        "method": "symbolic",
+        "weight": 0.75
+      },
+      {
+        "source": "b",
+        "target": "shu",
+        "context": "Chinese (書)",
+        "method": "symbolic",
+        "weight": 0.85,
+        "logographic_ref": "book"
+      },
+      {
+        "source": "b",
+        "target": "pillar",
+        "context": "Masonic",
+        "method": "symbolic",
+        "weight": 0.8
+      },
+      {
+        "source": "b",
+        "target": "Boaz",
+        "context": "Masonic",
+        "method": "symbolic",
+        "weight": 0.75
+      },
+      {
+        "source": "b",
+        "target": "birth",
+        "context": "Egyptian ba/soul",
+        "method": "symbolic",
+        "weight": 0.75
+      },
+      {
+        "source": "b",
+        "target": "sperm",
+        "context": "Reproductive essence",
+        "method": "symbolic",
+        "weight": 0.97
+      },
+      {
+        "source": "b",
+        "target": "reproductive",
+        "context": "Biological function",
+        "method": "symbolic",
+        "weight": 0.99
+      },
+      {
+        "source": "b",
+        "target": "fu",
+        "context": "Chinese (福)",
+        "method": "symbolic",
+        "weight": 0.8,
+        "logographic_ref": "blessing"
+      },
+      {
+        "source": "b",
+        "target": "ji",
+        "context": "Chinese (基)",
+        "method": "symbolic",
+        "weight": 0.75,
+        "logographic_ref": "base"
+      },
+      {
+        "source": "b",
+        "target": "fuku",
+        "context": "Japanese (福)",
+        "method": "symbolic",
+        "weight": 0.75,
+        "logographic_ref": "blessing"
+      },
+      {
+        "source": "b",
+        "target": "ki",
+        "context": "Japanese (基)",
+        "method": "symbolic",
+        "weight": 0.75,
+        "logographic_ref": "base"
+      }
+    ]
+  },
+  {
+    "character_id": "C",
+    "character_transforms": [
+      {
+        "source": "c",
+        "target": "eyeball",
+        "context": "Egyptian",
+        "method": "symbolic",
+        "weight": 0.85
+      },
+      {
+        "source": "c",
+        "target": "mu",
+        "context": "Chinese (目)",
+        "method": "symbolic",
+        "weight": 0.9,
+        "logographic_ref": "eyeball"
+      },
+      {
+        "source": "c",
+        "target": "me",
+        "context": "Japanese (目)",
+        "method": "symbolic",
+        "weight": 0.85,
+        "logographic_ref": "eyeball"
+      },
+      {
+        "source": "c",
+        "target": "see",
+        "context": "English homophone",
+        "method": "symbolic",
+        "weight": 1.0
+      },
+      {
+        "source": "c",
+        "target": "jian",
+        "context": "Chinese (见)",
+        "method": "symbolic",
+        "weight": 0.85,
+        "logographic_ref": "see"
+      },
+      {
+        "source": "c",
+        "target": "ken",
+        "context": "Japanese (見)",
+        "method": "symbolic",
+        "weight": 0.8,
+        "logographic_ref": "see"
+      },
+      {
+        "source": "c",
+        "target": "crescent",
+        "context": "Astrological",
+        "method": "symbolic",
+        "weight": 0.8
+      },
+      {
+        "source": "c",
+        "target": "yue",
+        "context": "Chinese (月)",
+        "method": "symbolic",
+        "weight": 0.85,
+        "logographic_ref": "crescent"
+      },
+      {
+        "source": "c",
+        "target": "tsuki",
+        "context": "Japanese (月)",
+        "method": "symbolic",
+        "weight": 0.8,
+        "logographic_ref": "crescent"
+      },
+      {
+        "source": "c",
+        "target": "sea",
+        "context": "English homophone",
+        "method": "symbolic",
+        "weight": 0.85
+      },
+      {
+        "source": "c",
+        "target": "hai",
+        "context": "Chinese (海)",
+        "method": "symbolic",
+        "weight": 0.85,
+        "logographic_ref": "sea"
+      },
+      {
+        "source": "c",
+        "target": "umi",
+        "context": "Japanese (海)",
+        "method": "symbolic",
+        "weight": 0.8,
+        "logographic_ref": "sea"
+      },
+      {
+        "source": "c",
+        "target": "cosmos",
+        "context": "Greek Sigma",
+        "method": "symbolic",
+        "weight": 0.75
+      },
+      {
+        "source": "c",
+        "target": "camel",
+        "context": "Phoenician",
+        "method": "symbolic",
+        "weight": 0.7
+      },
+      {
+        "source": "c",
+        "target": "creation",
+        "context": "Roman (Caesar)",
+        "method": "symbolic",
+        "weight": 0.75
+      },
+      {
+        "source": "c",
+        "target": "uchu",
+        "context": "Japanese (宇宙)",
+        "method": "symbolic",
+        "weight": 0.8,
+        "logographic_ref": "cosmos"
+      },
+      {
+        "source": "c",
+        "target": "yu",
+        "context": "Chinese (宇)",
+        "method": "symbolic",
+        "weight": 0.8,
+        "logographic_ref": "cosmos"
+      },
+      {
+        "source": "c",
+        "target": "yumi",
+        "context": "Japanese (弓)",
+        "method": "symbolic",
+        "weight": 0.75,
+        "logographic_ref": "arc"
+      },
+      {
+        "source": "c",
+        "target": "gong",
+        "context": "Chinese (弓)",
+        "method": "symbolic",
+        "weight": 0.75,
+        "logographic_ref": "arc"
+      },
+      {
+        "source": "c",
+        "target": "rakuda",
+        "context": "Japanese (駱駝)",
+        "method": "symbolic",
+        "weight": 0.7,
+        "logographic_ref": "camel"
+      },
+      {
+        "source": "c",
+        "target": "luo",
+        "context": "Chinese (骆)",
+        "method": "symbolic",
+        "weight": 0.7,
+        "logographic_ref": "camel"
+      }
+    ]
+  },
+  {
+    "character_id": "D",
+    "character_transforms": [
+      {
+        "source": "d",
+        "target": "door",
+        "context": "Phoenician",
+        "method": "symbolic",
+        "weight": 0.85
+      },
+      {
+        "source": "d",
+        "target": "men",
+        "context": "Chinese (門)",
+        "method": "symbolic",
+        "weight": 0.85,
+        "logographic_ref": "door"
+      },
+      {
+        "source": "d",
+        "target": "mon",
+        "context": "Japanese (門)",
+        "method": "symbolic",
+        "weight": 0.8,
+        "logographic_ref": "door"
+      },
+      {
+        "source": "d",
+        "target": "change",
+        "context": "Greek",
+        "method": "symbolic",
+        "weight": 0.8
+      },
+      {
+        "source": "d",
+        "target": "bian",
+        "context": "Chinese (变)",
+        "method": "symbolic",
+        "weight": 0.85,
+        "logographic_ref": "change"
+      },
+      {
+        "source": "d",
+        "target": "hen",
+        "context": "Japanese (変)",
+        "method": "symbolic",
+        "weight": 0.75,
+        "logographic_ref": "change"
+      },
+      {
+        "source": "d",
+        "target": "shield",
+        "context": "Egyptian",
+        "method": "symbolic",
+        "weight": 0.75
+      },
+      {
+        "source": "d",
+        "target": "dun",
+        "context": "Chinese (盾)",
+        "method": "symbolic",
+        "weight": 0.8,
+        "logographic_ref": "shield"
+      },
+      {
+        "source": "d",
+        "target": "tate",
+        "context": "Japanese (盾)",
+        "method": "symbolic",
+        "weight": 0.75,
+        "logographic_ref": "shield"
+      },
+      {
+        "source": "d",
+        "target": "ape",
+        "context": "SLF symbolic",
+        "method": "symbolic",
+        "weight": 0.8
+      },
+      {
+        "source": "d",
+        "target": "yuan",
+        "context": "Chinese (猿)",
+        "method": "symbolic",
+        "weight": 0.9,
+        "logographic_ref": "ape"
+      },
+      {
+        "source": "d",
+        "target": "saru",
+        "context": "Japanese (猿)",
+        "method": "symbolic",
+        "weight": 0.8,
+        "logographic_ref": "ape"
+      },
+      {
+        "source": "d",
+        "target": "divine",
+        "context": "Christian",
+        "method": "symbolic",
+        "weight": 0.75
+      },
+      {
+        "source": "d",
+        "target": "shen",
+        "context": "Chinese (神)",
+        "method": "symbolic",
+        "weight": 0.85,
+        "logographic_ref": "divine"
+      },
+      {
+        "source": "d",
+        "target": "kami",
+        "context": "Japanese (神)",
+        "method": "symbolic",
+        "weight": 0.8,
+        "logographic_ref": "divine"
+      },
+      {
+        "source": "d",
+        "target": "the",
+        "context": "SLF symbolic",
+        "method": "symbolic",
+        "weight": 0.98
+      },
+      {
+        "source": "d",
+        "target": "musicnote",
+        "context": "SLF symbolic",
+        "method": "symbolic",
+        "weight": 0.85
+      },
+      {
+        "source": "d",
+        "target": "gifttogod",
+        "context": "SLF symbolic",
+        "method": "symbolic",
+        "weight": 0.85
+      },
+      {
+        "source": "d",
+        "target": "giftfromgod",
+        "context": "SLF symbolic",
+        "method": "symbolic",
+        "weight": 0.85
+      },
+      {
+        "source": "d",
+        "target": "gift",
+        "context": "SLF symbolic",
+        "method": "symbolic",
+        "weight": 1.0
+      },
+      {
+        "source": "d",
+        "target": "dick",
+        "context": "SLF symbolic",
+        "method": "symbolic",
+        "weight": 0.99
+      },
+      {
+        "source": "d",
+        "target": "sperm",
+        "context": "Reproductive essence",
+        "method": "symbolic",
+        "weight": 0.97
+      },
+      {
+        "source": "d",
+        "target": "reproductive",
+        "context": "Biological function",
+        "method": "symbolic",
+        "weight": 0.99
+      },
+      {
+        "source": "d",
+        "target": "o",
+        "context": "Japanese (尾)",
+        "method": "symbolic",
+        "weight": 0.75,
+        "logographic_ref": "tail"
+      }
+    ]
+  },
+  {
+    "character_id": "E",
+    "character_transforms": [
+      {
+        "source": "e",
+        "target": "life",
+        "context": "Christian",
+        "method": "symbolic",
+        "weight": 0.85
+      },
+      {
+        "source": "e",
+        "target": "sheng",
+        "context": "Chinese (生)",
+        "method": "symbolic",
+        "weight": 0.9,
+        "logographic_ref": "life"
+      },
+      {
+        "source": "e",
+        "target": "sei",
+        "context": "Japanese (生)",
+        "method": "symbolic",
+        "weight": 0.85,
+        "logographic_ref": "life"
+      },
+      {
+        "source": "e",
+        "target": "expression",
+        "context": "Greek",
+        "method": "symbolic",
+        "weight": 0.8
+      },
+      {
+        "source": "e",
+        "target": "i",
+        "context": "Japanese (イ)",
+        "method": "symbolic",
+        "weight": 0.85,
+        "logographic_ref": "expression"
+      },
+      {
+        "source": "e",
+        "target": "fire",
+        "context": "Egyptian (Re/Sekhmet)",
+        "method": "symbolic",
+        "weight": 0.8
+      },
+      {
+        "source": "e",
+        "target": "huo",
+        "context": "Chinese (火)",
+        "method": "symbolic",
+        "weight": 0.85,
+        "logographic_ref": "fire"
+      },
+      {
+        "source": "e",
+        "target": "hi",
+        "context": "Japanese (火)",
+        "method": "symbolic",
+        "weight": 0.8,
+        "logographic_ref": "fire"
+      },
+      {
+        "source": "e",
+        "target": "flower",
+        "context": "SLF symbolic",
+        "method": "symbolic",
+        "weight": 0.75
+      },
+      {
+        "source": "e",
+        "target": "hua",
+        "context": "Chinese (花)",
+        "method": "symbolic",
+        "weight": 0.75,
+        "logographic_ref": "flower"
+      },
+      {
+        "source": "e",
+        "target": "hana",
+        "context": "Japanese (花)",
+        "method": "symbolic",
+        "weight": 0.8,
+        "logographic_ref": "flower"
+      },
+      {
+        "source": "e",
+        "target": "money",
+        "context": "SLF symbolic",
+        "method": "symbolic",
+        "weight": 0.85
+      },
+      {
+        "source": "e",
+        "target": "jin",
+        "context": "Chinese (金)",
+        "method": "symbolic",
+        "weight": 0.8,
+        "logographic_ref": "money"
+      },
+      {
+        "source": "e",
+        "target": "kane",
+        "context": "Japanese (金)",
+        "method": "symbolic",
+        "weight": 0.75,
+        "logographic_ref": "money"
+      },
+      {
+        "source": "e",
+        "target": "window",
+        "context": "Phoenician",
+        "method": "symbolic",
+        "weight": 0.75
+      },
+      {
+        "source": "e",
+        "target": "energy",
+        "context": "Modern physics",
+        "method": "symbolic",
+        "weight": 0.9
+      },
+      {
+        "source": "e",
+        "target": "rake",
+        "context": "SLF symbolic",
+        "method": "symbolic",
+        "weight": 1.0
+      },
+      {
+        "source": "e",
+        "target": "sow",
+        "context": "SLF symbolic",
+        "method": "symbolic",
+        "weight": 0.95
+      },
+      {
+        "source": "e",
+        "target": "seed",
+        "context": "SLF symbolic",
+        "method": "symbolic",
+        "weight": 0.9
+      },
+      {
+        "source": "e",
+        "target": "guang",
+        "context": "Chinese (光)",
+        "method": "symbolic",
+        "weight": 0.8,
+        "logographic_ref": "ray"
+      },
+      {
+        "source": "e",
+        "target": "hikari",
+        "context": "Japanese (光)",
+        "method": "symbolic",
+        "weight": 0.8,
+        "logographic_ref": "ray"
+      },
+      {
+        "source": "e",
+        "target": "zhong",
+        "context": "Chinese (種)",
+        "method": "symbolic",
+        "weight": 0.75,
+        "logographic_ref": "seed"
+      },
+      {
+        "source": "e",
+        "target": "tane",
+        "context": "Japanese (種)",
+        "method": "symbolic",
+        "weight": 0.75,
+        "logographic_ref": "seed"
+      },
+      {
+        "source": "e",
+        "target": "nong",
+        "context": "Chinese (農)",
+        "method": "symbolic",
+        "weight": 0.75,
+        "logographic_ref": "sow"
+      },
+      {
+        "source": "e",
+        "target": "no",
+        "context": "Japanese (農)",
+        "method": "symbolic",
+        "weight": 0.75,
+        "logographic_ref": "sow"
+      }
+    ]
+  },
+  {
+    "character_id": "F",
+    "character_transforms": [
+      {
+        "source": "f",
+        "target": "fork",
+        "context": "Egyptian (𓌸)",
+        "method": "symbolic",
+        "weight": 1.0
+      },
+      {
+        "source": "f",
+        "target": "shandian",
+        "context": "Chinese (⚡)",
+        "method": "symbolic",
+        "weight": 0.85,
+        "logographic_ref": "fork"
+      },
+      {
+        "source": "f",
+        "target": "frequency",
+        "context": "Physics",
+        "method": "symbolic",
+        "weight": 0.85
+      },
+      {
+        "source": "f",
+        "target": "pinlu",
+        "context": "Chinese (频率)",
+        "method": "symbolic",
+        "weight": 0.8,
+        "logographic_ref": "frequency"
+      },
+      {
+        "source": "f",
+        "target": "twotines",
+        "context": "Duality (night/day)",
+        "method": "symbolic",
+        "weight": 0.95
+      },
+      {
+        "source": "f",
+        "target": "phoenicianhook",
+        "context": "Phoenician",
+        "method": "symbolic",
+        "weight": 0.8
+      },
+      {
+        "source": "f",
+        "target": "fen",
+        "context": "Chinese (分)",
+        "method": "symbolic",
+        "weight": 0.8,
+        "logographic_ref": "divide"
+      },
+      {
+        "source": "f",
+        "target": "bun",
+        "context": "Japanese (分)",
+        "method": "symbolic",
+        "weight": 0.8,
+        "logographic_ref": "divide"
+      },
+      {
+        "source": "f",
+        "target": "pin",
+        "context": "Chinese (频)",
+        "method": "symbolic",
+        "weight": 0.75,
+        "logographic_ref": "frequency"
+      },
+      {
+        "source": "f",
+        "target": "hin",
+        "context": "Japanese (频)",
+        "method": "symbolic",
+        "weight": 0.75,
+        "logographic_ref": "frequency"
+      }
+    ]
+  },
+  {
+    "character_id": "G",
+    "character_transforms": [
+      {
+        "source": "g",
+        "target": "geometry",
+        "context": "Greek",
+        "method": "symbolic",
+        "weight": 0.9
+      },
+      {
+        "source": "g",
+        "target": "jihe",
+        "context": "Chinese (几何)",
+        "method": "symbolic",
+        "weight": 0.85,
+        "logographic_ref": "geometry"
+      },
+      {
+        "source": "g",
+        "target": "camel",
+        "context": "Phoenician",
+        "method": "symbolic",
+        "weight": 0.85
+      },
+      {
+        "source": "g",
+        "target": "luotuo",
+        "context": "Chinese (骆驼)",
+        "method": "symbolic",
+        "weight": 0.8,
+        "logographic_ref": "camel"
+      },
+      {
+        "source": "g",
+        "target": "rakuda",
+        "context": "Japanese (駱駝)",
+        "method": "symbolic",
+        "weight": 0.75,
+        "logographic_ref": "camel"
+      },
+      {
+        "source": "g",
+        "target": "root",
+        "context": "Egyptian",
+        "method": "symbolic",
+        "weight": 0.8
+      },
+      {
+        "source": "g",
+        "target": "gen",
+        "context": "Chinese (根)",
+        "method": "symbolic",
+        "weight": 0.85,
+        "logographic_ref": "root"
+      },
+      {
+        "source": "g",
+        "target": "God",
+        "context": "Masonic/Christian",
+        "method": "symbolic",
+        "weight": 0.95
+      },
+      {
+        "source": "g",
+        "target": "mason",
+        "context": "Masonic",
+        "method": "symbolic",
+        "weight": 1.0
+      },
+      {
+        "source": "g",
+        "target": "ne",
+        "context": "Japanese (根)",
+        "method": "symbolic",
+        "weight": 0.8,
+        "logographic_ref": "root"
+      }
+    ]
+  },
+  {
+    "character_id": "H",
+    "character_transforms": [
+      {
+        "source": "h",
+        "target": "breath",
+        "context": "Egyptian",
+        "method": "symbolic",
+        "weight": 0.9
+      },
+      {
+        "source": "h",
+        "target": "huxi",
+        "context": "Chinese (呼吸)",
+        "method": "symbolic",
+        "weight": 0.85,
+        "logographic_ref": "breath"
+      },
+      {
+        "source": "h",
+        "target": "ha",
+        "context": "Japanese (ハ)",
+        "method": "symbolic",
+        "weight": 0.8,
+        "logographic_ref": "breath"
+      },
+      {
+        "source": "h",
+        "target": "man",
+        "context": "Chinese/Japanese (男)",
+        "method": "symbolic",
+        "weight": 0.8
+      },
+      {
+        "source": "h",
+        "target": "nan",
+        "context": "Chinese (男)",
+        "method": "symbolic",
+        "weight": 0.85,
+        "logographic_ref": "man"
+      },
+      {
+        "source": "h",
+        "target": "otoko",
+        "context": "Japanese (男)",
+        "method": "symbolic",
+        "weight": 0.8,
+        "logographic_ref": "man"
+      },
+      {
+        "source": "h",
+        "target": "hand",
+        "context": "Greek (Hephaestus)",
+        "method": "symbolic",
+        "weight": 0.8
+      },
+      {
+        "source": "h",
+        "target": "shou",
+        "context": "Chinese (手)",
+        "method": "symbolic",
+        "weight": 0.85,
+        "logographic_ref": "hand"
+      },
+      {
+        "source": "h",
+        "target": "te",
+        "context": "Japanese (手)",
+        "method": "symbolic",
+        "weight": 0.8,
+        "logographic_ref": "hand"
+      },
+      {
+        "source": "h",
+        "target": "mantillingthefield",
+        "context": "Agricultural",
+        "method": "symbolic",
+        "weight": 0.75
+      },
+      {
+        "source": "h",
+        "target": "geng",
+        "context": "Chinese (耕)",
+        "method": "symbolic",
+        "weight": 0.8,
+        "logographic_ref": "mantillingthefield"
+      },
+      {
+        "source": "h",
+        "target": "harmony",
+        "context": "Greek",
+        "method": "symbolic",
+        "weight": 0.85
+      },
+      {
+        "source": "h",
+        "target": "man",
+        "context": "Greek",
+        "method": "symbolic",
+        "weight": 1.0
+      },
+      {
+        "source": "h",
+        "target": "hose",
+        "context": "Agricultural",
+        "method": "symbolic",
+        "weight": 0.75
+      },
+      {
+        "source": "h",
+        "target": "kokyu",
+        "context": "Japanese (呼吸)",
+        "method": "symbolic",
+        "weight": 0.8,
+        "logographic_ref": "breath"
+      },
+      {
+        "source": "h",
+        "target": "tagayasu",
+        "context": "Japanese (耕)",
+        "method": "symbolic",
+        "weight": 0.75,
+        "logographic_ref": "mantillingthefield"
+      }
+    ]
+  },
+  {
+    "character_id": "I",
+    "character_transforms": [
+      {
+        "source": "i",
+        "target": "eye",
+        "context": "Egyptian",
+        "method": "symbolic",
+        "weight": 0.95
+      },
+      {
+        "source": "i",
+        "target": "mu",
+        "context": "Chinese (目)",
+        "method": "symbolic",
+        "weight": 0.9,
+        "logographic_ref": "eye"
+      },
+      {
+        "source": "i",
+        "target": "me",
+        "context": "Japanese (目)",
+        "method": "symbolic",
+        "weight": 0.85,
+        "logographic_ref": "eye"
+      },
+      {
+        "source": "i",
+        "target": "grass",
+        "context": "Nature symbolism",
+        "method": "symbolic",
+        "weight": 0.85
+      },
+      {
+        "source": "i",
+        "target": "cao",
+        "context": "Chinese (草)",
+        "method": "symbolic",
+        "weight": 0.9,
+        "logographic_ref": "grass"
+      },
+      {
+        "source": "i",
+        "target": "kusa",
+        "context": "Japanese (草)",
+        "method": "symbolic",
+        "weight": 0.85,
+        "logographic_ref": "grass"
+      },
+      {
+        "source": "i",
+        "target": "candle",
+        "context": "Illumination",
+        "method": "symbolic",
+        "weight": 0.9
+      },
+      {
+        "source": "i",
+        "target": "lazhu",
+        "context": "Chinese (蜡烛)",
+        "method": "symbolic",
+        "weight": 0.85,
+        "logographic_ref": "candle"
+      },
+      {
+        "source": "i",
+        "target": "rosoku",
+        "context": "Japanese (蝋燭)",
+        "method": "symbolic",
+        "weight": 0.8,
+        "logographic_ref": "candle"
+      },
+      {
+        "source": "i",
+        "target": "one",
+        "context": "Numerical",
+        "method": "symbolic",
+        "weight": 0.95
+      },
+      {
+        "source": "i",
+        "target": "yi",
+        "context": "Chinese (一)",
+        "method": "symbolic",
+        "weight": 0.95,
+        "logographic_ref": "one"
+      },
+      {
+        "source": "i",
+        "target": "ichi",
+        "context": "Japanese (一)",
+        "method": "symbolic",
+        "weight": 0.9,
+        "logographic_ref": "one"
+      },
+      {
+        "source": "i",
+        "target": "light",
+        "context": "Spiritual",
+        "method": "symbolic",
+        "weight": 0.9
+      },
+      {
+        "source": "i",
+        "target": "guang",
+        "context": "Chinese (光)",
+        "method": "symbolic",
+        "weight": 0.9,
+        "logographic_ref": "light"
+      },
+      {
+        "source": "i",
+        "target": "hikari",
+        "context": "Japanese (光)",
+        "method": "symbolic",
+        "weight": 0.85,
+        "logographic_ref": "light"
+      },
+      {
+        "source": "i",
+        "target": "self",
+        "context": "Hindu",
+        "method": "symbolic",
+        "weight": 0.95
+      },
+      {
+        "source": "i",
+        "target": "aham",
+        "context": "Sanskrit (अहं)",
+        "method": "symbolic",
+        "weight": 0.9,
+        "logographic_ref": "self"
+      },
+      {
+        "source": "i",
+        "target": "crop",
+        "context": "Agricultural essence",
+        "method": "symbolic",
+        "weight": 1.0
+      },
+      {
+        "source": "i",
+        "target": "he",
+        "context": "Chinese (禾)",
+        "method": "symbolic",
+        "weight": 0.85,
+        "logographic_ref": "crop"
+      },
+      {
+        "source": "i",
+        "target": "ine",
+        "context": "Japanese (稲)",
+        "method": "symbolic",
+        "weight": 0.8,
+        "logographic_ref": "crop"
+      }
+    ]
+  },
+  {
+    "character_id": "J",
+    "character_transforms": [
+      {
+        "source": "j",
+        "target": "justice",
+        "context": "Global",
+        "method": "conceptual",
+        "weight": 0.98
+      },
+      {
+        "source": "j",
+        "target": "sword",
+        "context": "Japanese",
+        "method": "symbolic",
+        "weight": 0.97
+      },
+      {
+        "source": "j",
+        "target": "刀",
+        "context": "Chinese",
+        "method": "logographic",
+        "weight": 0.95,
+        "logographic_ref": "sword"
+      },
+      {
+        "source": "j",
+        "target": "jay",
+        "context": "Ornithology",
+        "method": "symbolic",
+        "weight": 0.96
+      },
+      {
+        "source": "j",
+        "target": "松鴉",
+        "context": "Chinese",
+        "method": "logographic",
+        "weight": 0.9,
+        "logographic_ref": "jay"
+      },
+      {
+        "source": "j",
+        "target": "weapon",
+        "context": "Hebrew",
+        "method": "symbolic",
+        "weight": 0.98
+      },
+      {
+        "source": "j",
+        "target": "武器",
+        "context": "Japanese",
+        "method": "logographic",
+        "weight": 0.95,
+        "logographic_ref": "weapon"
+      },
+      {
+        "source": "j",
+        "target": "fishinghook",
+        "context": "Norse",
+        "method": "symbolic",
+        "weight": 0.99
+      },
+      {
+        "source": "j",
+        "target": "釣鉤",
+        "context": "Japanese",
+        "method": "logographic",
+        "weight": 0.97,
+        "logographic_ref": "fishinghook"
+      }
+    ]
+  },
+  {
+    "character_id": "K",
+    "character_transforms": [
+      {
+        "source": "k",
+        "target": "ok",
+        "context": "Global",
+        "method": "symbolic",
+        "weight": 1.0
+      },
+      {
+        "source": "k",
+        "target": "learnedman",
+        "context": "Greek",
+        "method": "symbolic",
+        "weight": 0.98
+      },
+      {
+        "source": "k",
+        "target": "賢人",
+        "context": "Japanese",
+        "method": "logographic",
+        "weight": 0.96,
+        "logographic_ref": "learnedman"
+      },
+      {
+        "source": "k",
+        "target": "why",
+        "context": "Inquiry",
+        "method": "conceptual",
+        "weight": 0.95
+      },
+      {
+        "source": "k",
+        "target": "為何",
+        "context": "Chinese",
+        "method": "logographic",
+        "weight": 0.92,
+        "logographic_ref": "why"
+      },
+      {
+        "source": "k",
+        "target": "bird",
+        "context": "Egyptian",
+        "method": "symbolic",
+        "weight": 0.97
+      },
+      {
+        "source": "k",
+        "target": "鳥",
+        "context": "Japanese",
+        "method": "logographic",
+        "weight": 0.95,
+        "logographic_ref": "bird"
+      },
+      {
+        "source": "k",
+        "target": "cock",
+        "context": "Farm animal",
+        "method": "symbolic",
+        "weight": 0.98
+      },
+      {
+        "source": "k",
+        "target": "公鸡",
+        "context": "Chinese",
+        "method": "logographic",
+        "weight": 0.96,
+        "logographic_ref": "cock"
+      }
+    ]
+  },
+  {
+    "character_id": "L",
+    "character_transforms": [
+      {
+        "source": "l",
+        "target": "hoe",
+        "context": "Visual glyph",
+        "method": "symbolic",
+        "weight": 0.99
+      },
+      {
+        "source": "l",
+        "target": "鋤",
+        "context": "Japanese",
+        "method": "logographic",
+        "weight": 0.97,
+        "logographic_ref": "hoe"
+      },
+      {
+        "source": "l",
+        "target": "chu",
+        "context": "Chinese",
+        "method": "symbolic",
+        "weight": 0.95,
+        "logographic_ref": "hoe"
+      },
+      {
+        "source": "l",
+        "target": "till",
+        "context": "Agricultural",
+        "method": "conceptual",
+        "weight": 0.98
+      },
+      {
+        "source": "l",
+        "target": "耕",
+        "context": "Chinese",
+        "method": "logographic",
+        "weight": 0.96,
+        "logographic_ref": "till"
+      },
+      {
+        "source": "l",
+        "target": "ko",
+        "context": "Japanese",
+        "method": "symbolic",
+        "weight": 0.95,
+        "logographic_ref": "till"
+      },
+      {
+        "source": "l",
+        "target": "hell",
+        "context": "Norse",
+        "method": "symbolic",
+        "weight": 0.98
+      },
+      {
+        "source": "l",
+        "target": "地獄",
+        "context": "Japanese",
+        "method": "logographic",
+        "weight": 0.95,
+        "logographic_ref": "hell"
+      },
+      {
+        "source": "l",
+        "target": "wall",
+        "context": "Chinese",
+        "method": "symbolic",
+        "weight": 0.97
+      },
+      {
+        "source": "l",
+        "target": "壁",
+        "context": "Japanese",
+        "method": "logographic",
+        "weight": 0.96,
+        "logographic_ref": "wall"
+      },
+      {
+        "source": "l",
+        "target": "i",
+        "context": "Pronoun",
+        "method": "conceptual",
+        "weight": 0.95
+      },
+      {
+        "source": "l",
+        "target": "我",
+        "context": "Chinese",
+        "method": "logographic",
+        "weight": 0.97,
+        "logographic_ref": "I"
+      },
+      {
+        "source": "l",
+        "target": "rail",
+        "context": "Transportation",
+        "method": "symbolic",
+        "weight": 0.96
+      },
+      {
+        "source": "l",
+        "target": "線路",
+        "context": "Japanese",
+        "method": "logographic",
+        "weight": 0.94,
+        "logographic_ref": "rail"
+      },
+      {
+        "source": "l",
+        "target": "how",
+        "context": "Inquiry",
+        "method": "conceptual",
+        "weight": 0.93
+      },
+      {
+        "source": "l",
+        "target": "如何",
+        "context": "Chinese",
+        "method": "logographic",
+        "weight": 0.92,
+        "logographic_ref": "how"
+      },
+      {
+        "source": "l",
+        "target": "nail",
+        "context": "Construction",
+        "method": "symbolic",
+        "weight": 0.98
+      },
+      {
+        "source": "l",
+        "target": "釘",
+        "context": "Chinese",
+        "method": "logographic",
+        "weight": 0.97,
+        "logographic_ref": "nail"
+      },
+      {
+        "source": "l",
+        "target": "tail",
+        "context": "Anatomy",
+        "method": "symbolic",
+        "weight": 0.96
+      },
+      {
+        "source": "l",
+        "target": "尾",
+        "context": "Japanese",
+        "method": "logographic",
+        "weight": 0.95,
+        "logographic_ref": "tail"
+      },
+      {
+        "source": "l",
+        "target": "hail",
+        "context": "Meteorology",
+        "method": "symbolic",
+        "weight": 0.97
+      },
+      {
+        "source": "l",
+        "target": "雹",
+        "context": "Chinese",
+        "method": "logographic",
+        "weight": 0.96,
+        "logographic_ref": "hail"
+      },
+      {
+        "source": "l",
+        "target": "one",
+        "context": "Numerical",
+        "method": "conceptual",
+        "weight": 0.95
+      },
+      {
+        "source": "l",
+        "target": "一",
+        "context": "Chinese",
+        "method": "logographic",
+        "weight": 0.99,
+        "logographic_ref": "one"
+      },
+      {
+        "source": "l",
+        "target": "ruler",
+        "context": "Measurement",
+        "method": "symbolic",
+        "weight": 0.98
+      },
+      {
+        "source": "l",
+        "target": "定規",
+        "context": "Japanese",
+        "method": "logographic",
+        "weight": 0.97,
+        "logographic_ref": "ruler"
+      },
+      {
+        "source": "l",
+        "target": "jigoku",
+        "context": "Japanese (地獄)",
+        "method": "symbolic",
+        "weight": 0.9,
+        "logographic_ref": "hell"
+      },
+      {
+        "source": "l",
+        "target": "kabe",
+        "context": "Japanese (壁)",
+        "method": "symbolic",
+        "weight": 0.9,
+        "logographic_ref": "wall"
+      },
+      {
+        "source": "l",
+        "target": "kijo",
+        "context": "Japanese (軌条)",
+        "method": "symbolic",
+        "weight": 0.85,
+        "logographic_ref": "rail"
+      },
+      {
+        "source": "l",
+        "target": "o",
+        "context": "Japanese (尾)",
+        "method": "symbolic",
+        "weight": 0.85,
+        "logographic_ref": "tail"
+      },
+      {
+        "source": "l",
+        "target": "jogi",
+        "context": "Japanese (定規)",
+        "method": "symbolic",
+        "weight": 0.9,
+        "logographic_ref": "ruler"
+      },
+      {
+        "source": "l",
+        "target": "suki",
+        "context": "Japanese (鋤)",
+        "method": "symbolic",
+        "weight": 0.9,
+        "logographic_ref": "hoe"
+      },
+      {
+        "source": "l",
+        "target": "tagayasu",
+        "context": "Japanese (耕)",
+        "method": "symbolic",
+        "weight": 0.85,
+        "logographic_ref": "till"
+      }
+    ]
+  },
+  {
+    "character_id": "M",
+    "character_transforms": [
+      {
+        "source": "m",
+        "target": "twohumps",
+        "context": "Glyph shape",
+        "method": "symbolic",
+        "weight": 0.99
+      },
+      {
+        "source": "m",
+        "target": "split",
+        "context": "Hebrew Mem (water division)",
+        "method": "symbolic",
+        "weight": 0.95
+      },
+      {
+        "source": "m",
+        "target": "fenlie",
+        "context": "Chinese (分裂)",
+        "method": "logographic",
+        "weight": 0.92,
+        "logographic_ref": "split"
+      },
+      {
+        "source": "m",
+        "target": "mountains",
+        "context": "Greek Mu",
+        "method": "symbolic",
+        "weight": 0.98
+      },
+      {
+        "source": "m",
+        "target": "shan",
+        "context": "Chinese (山)",
+        "method": "logographic",
+        "weight": 0.97,
+        "logographic_ref": "mountains"
+      },
+      {
+        "source": "m",
+        "target": "yama",
+        "context": "Japanese (山)",
+        "method": "symbolic",
+        "weight": 0.95,
+        "logographic_ref": "mountains"
+      },
+      {
+        "source": "m",
+        "target": "plow",
+        "context": "Egyptian",
+        "method": "symbolic",
+        "weight": 0.96
+      },
+      {
+        "source": "m",
+        "target": "li",
+        "context": "Chinese (犁)",
+        "method": "logographic",
+        "weight": 0.94,
+        "logographic_ref": "plow"
+      },
+      {
+        "source": "m",
+        "target": "bird",
+        "context": "Glyph as wings",
+        "method": "symbolic",
+        "weight": 0.9
+      },
+      {
+        "source": "m",
+        "target": "niao",
+        "context": "Chinese (鸟)",
+        "method": "logographic",
+        "weight": 0.88,
+        "logographic_ref": "bird"
+      },
+      {
+        "source": "m",
+        "target": "angel",
+        "context": "Christian",
+        "method": "symbolic",
+        "weight": 0.97
+      },
+      {
+        "source": "m",
+        "target": "tianshi",
+        "context": "Chinese (天使)",
+        "method": "logographic",
+        "weight": 0.95,
+        "logographic_ref": "angel"
+      },
+      {
+        "source": "m",
+        "target": "tenshi",
+        "context": "Japanese (天使)",
+        "method": "symbolic",
+        "weight": 0.93,
+        "logographic_ref": "angel"
+      },
+      {
+        "source": "m",
+        "target": "tiller",
+        "context": "Agricultural",
+        "method": "symbolic",
+        "weight": 0.94
+      },
+      {
+        "source": "m",
+        "target": "gengju",
+        "context": "Chinese (耕具)",
+        "method": "logographic",
+        "weight": 0.92,
+        "logographic_ref": "tiller"
+      },
+      {
+        "source": "m",
+        "target": "mass",
+        "context": "Physics",
+        "method": "symbolic",
+        "weight": 0.99
+      },
+      {
+        "source": "m",
+        "target": "zhiliang",
+        "context": "Chinese (质量)",
+        "method": "logographic",
+        "weight": 0.97,
+        "logographic_ref": "mass"
+      }
+    ]
+  },
+  {
+    "character_id": "N",
+    "character_transforms": [
+      {
+        "source": "n",
+        "target": "mound",
+        "context": "Agricultural/earth formation",
+        "method": "symbolic",
+        "weight": 1.0
+      },
+      {
+        "source": "n",
+        "target": "shan",
+        "context": "Chinese (山)",
+        "method": "symbolic",
+        "weight": 0.9,
+        "logographic_ref": "mound"
+      },
+      {
+        "source": "n",
+        "target": "yama",
+        "context": "Japanese (山)",
+        "method": "symbolic",
+        "weight": 0.85,
+        "logographic_ref": "mound"
+      },
+      {
+        "source": "n",
+        "target": "in",
+        "context": "Containment concept",
+        "method": "symbolic",
+        "weight": 0.97
+      },
+      {
+        "source": "n",
+        "target": "nei",
+        "context": "Chinese (内)",
+        "method": "symbolic",
+        "weight": 0.95,
+        "logographic_ref": "in"
+      },
+      {
+        "source": "n",
+        "target": "uchi",
+        "context": "Japanese (内)",
+        "method": "symbolic",
+        "weight": 0.9,
+        "logographic_ref": "in"
+      },
+      {
+        "source": "n",
+        "target": "end",
+        "context": "Termination concept",
+        "method": "symbolic",
+        "weight": 0.96
+      },
+      {
+        "source": "n",
+        "target": "zhong",
+        "context": "Chinese (終)",
+        "method": "symbolic",
+        "weight": 0.92,
+        "logographic_ref": "end"
+      },
+      {
+        "source": "n",
+        "target": "owari",
+        "context": "Japanese (終)",
+        "method": "symbolic",
+        "weight": 0.9,
+        "logographic_ref": "end"
+      },
+      {
+        "source": "n",
+        "target": "net",
+        "context": "Fishing/connection",
+        "method": "symbolic",
+        "weight": 0.88
+      },
+      {
+        "source": "n",
+        "target": "wang",
+        "context": "Chinese (网)",
+        "method": "symbolic",
+        "weight": 0.85,
+        "logographic_ref": "net"
+      },
+      {
+        "source": "n",
+        "target": "negative",
+        "context": "Mathematics",
+        "method": "symbolic",
+        "weight": 0.95
+      },
+      {
+        "source": "n",
+        "target": "fu",
+        "context": "Chinese (負)",
+        "method": "symbolic",
+        "weight": 0.9,
+        "logographic_ref": "negative"
+      },
+      {
+        "source": "n",
+        "target": "nest",
+        "context": "Contained space",
+        "method": "symbolic",
+        "weight": 0.85
+      },
+      {
+        "source": "n",
+        "target": "chao",
+        "context": "Chinese (巢)",
+        "method": "symbolic",
+        "weight": 0.82,
+        "logographic_ref": "nest"
+      }
+    ]
+  },
+  {
+    "character_id": "O",
+    "character_transforms": [
+      {
+        "source": "o",
+        "target": "world",
+        "context": "Global concept",
+        "method": "symbolic",
+        "weight": 0.99
+      },
+      {
+        "source": "o",
+        "target": "shi",
+        "context": "Chinese (世)",
+        "method": "symbolic",
+        "weight": 0.95,
+        "logographic_ref": "world"
+      },
+      {
+        "source": "o",
+        "target": "yo",
+        "context": "Japanese (世)",
+        "method": "symbolic",
+        "weight": 0.9,
+        "logographic_ref": "world"
+      },
+      {
+        "source": "o",
+        "target": "circle",
+        "context": "Geometric shape",
+        "method": "symbolic",
+        "weight": 0.99
+      },
+      {
+        "source": "o",
+        "target": "yuan",
+        "context": "Chinese (圆)",
+        "method": "symbolic",
+        "weight": 0.97,
+        "logographic_ref": "circle"
+      },
+      {
+        "source": "o",
+        "target": "maru",
+        "context": "Japanese (丸)",
+        "method": "symbolic",
+        "weight": 0.95,
+        "logographic_ref": "circle"
+      },
+      {
+        "source": "o",
+        "target": "hole",
+        "context": "Void concept",
+        "method": "symbolic",
+        "weight": 0.98
+      },
+      {
+        "source": "o",
+        "target": "dong",
+        "context": "Chinese (洞)",
+        "method": "symbolic",
+        "weight": 0.96,
+        "logographic_ref": "hole"
+      },
+      {
+        "source": "o",
+        "target": "ana",
+        "context": "Japanese (穴)",
+        "method": "symbolic",
+        "weight": 0.92,
+        "logographic_ref": "hole"
+      },
+      {
+        "source": "o",
+        "target": "saucer",
+        "context": "UFO shape",
+        "method": "symbolic",
+        "weight": 0.97
+      },
+      {
+        "source": "o",
+        "target": "UFO",
+        "context": "Modern phenomenon",
+        "method": "acronym",
+        "weight": 0.95
+      },
+      {
+        "source": "o",
+        "target": "yinzhou",
+        "context": "Chinese (飞碟)",
+        "method": "symbolic",
+        "weight": 0.9,
+        "logographic_ref": "UFO"
+      },
+      {
+        "source": "o",
+        "target": "fruit",
+        "context": "Spherical produce",
+        "method": "symbolic",
+        "weight": 0.96
+      },
+      {
+        "source": "o",
+        "target": "shuiguo",
+        "context": "Chinese (水果)",
+        "method": "symbolic",
+        "weight": 0.92,
+        "logographic_ref": "fruit"
+      },
+      {
+        "source": "o",
+        "target": "qian",
+        "context": "Chinese (欠)",
+        "method": "symbolic",
+        "weight": 0.9,
+        "logographic_ref": "owe"
+      },
+      {
+        "source": "o",
+        "target": "zero",
+        "context": "Numerical",
+        "method": "symbolic",
+        "weight": 0.99
+      },
+      {
+        "source": "o",
+        "target": "ling",
+        "context": "Chinese (零)",
+        "method": "symbolic",
+        "weight": 0.98,
+        "logographic_ref": "zero"
+      },
+      {
+        "source": "o",
+        "target": "zero",
+        "context": "Japanese (セロ)",
+        "method": "symbolic",
+        "weight": 0.95,
+        "logographic_ref": "zero"
+      },
+      {
+        "source": "o",
+        "target": "sun",
+        "context": "Solar body",
+        "method": "symbolic",
+        "weight": 0.99
+      },
+      {
+        "source": "o",
+        "target": "tai",
+        "context": "Chinese (太)",
+        "method": "symbolic",
+        "weight": 0.95,
+        "logographic_ref": "sun"
+      },
+      {
+        "source": "o",
+        "target": "hi",
+        "context": "Japanese (日)",
+        "method": "symbolic",
+        "weight": 0.92,
+        "logographic_ref": "sun"
+      },
+      {
+        "source": "o",
+        "target": "UAP",
+        "context": "Modern phenomenon",
+        "method": "acronym",
+        "weight": 0.96
+      },
+      {
+        "source": "o",
+        "target": "orbit",
+        "context": "Celestial mechanics",
+        "method": "symbolic",
+        "weight": 0.97
+      },
+      {
+        "source": "o",
+        "target": "guidao",
+        "context": "Chinese (轨道)",
+        "method": "symbolic",
+        "weight": 0.94,
+        "logographic_ref": "orbit"
+      },
+      {
+        "source": "o",
+        "target": "orange",
+        "context": "Fruit/color",
+        "method": "symbolic",
+        "weight": 0.98
+      },
+      {
+        "source": "o",
+        "target": "cheng",
+        "context": "Chinese (橙)",
+        "method": "symbolic",
+        "weight": 0.96,
+        "logographic_ref": "orange"
+      },
+      {
+        "source": "o",
+        "target": "orenji",
+        "context": "Japanese (オレンシ)",
+        "method": "symbolic",
+        "weight": 0.93,
+        "logographic_ref": "orange"
+      },
+      {
+        "source": "o",
+        "target": "womb",
+        "context": "Origin of life",
+        "method": "symbolic",
+        "weight": 0.99
+      },
+      {
+        "source": "o",
+        "target": "zigong",
+        "context": "Chinese (子宫)",
+        "method": "symbolic",
+        "weight": 0.97,
+        "logographic_ref": "womb"
+      },
+      {
+        "source": "o",
+        "target": "shikyu",
+        "context": "Japanese (子宮)",
+        "method": "symbolic",
+        "weight": 0.95,
+        "logographic_ref": "womb"
+      },
+      {
+        "source": "o",
+        "target": "moon",
+        "context": "Celestial Symbolism",
+        "method": "symbolic",
+        "weight": 0.95,
+        "logographic_ref": "moon"
+      }
+    ]
+  },
+  {
+    "character_id": "P",
+    "character_transforms": [
+      {
+        "source": "p",
+        "target": "plant",
+        "context": "Agricultural",
+        "method": "symbolic",
+        "weight": 0.98
+      },
+      {
+        "source": "p",
+        "target": "zhiwu",
+        "context": "Chinese (植物)",
+        "method": "symbolic",
+        "weight": 0.95,
+        "logographic_ref": "plant"
+      },
+      {
+        "source": "p",
+        "target": "shokubutsu",
+        "context": "Japanese (植物)",
+        "method": "symbolic",
+        "weight": 0.92,
+        "logographic_ref": "plant"
+      },
+      {
+        "source": "p",
+        "target": "tongue",
+        "context": "Phoenician origin",
+        "method": "symbolic",
+        "weight": 0.97
+      },
+      {
+        "source": "p",
+        "target": "she",
+        "context": "Chinese (舌)",
+        "method": "symbolic",
+        "weight": 0.95,
+        "logographic_ref": "tongue"
+      },
+      {
+        "source": "p",
+        "target": "shita",
+        "context": "Japanese (舌)",
+        "method": "symbolic",
+        "weight": 0.9,
+        "logographic_ref": "tongue"
+      },
+      {
+        "source": "p",
+        "target": "scepter",
+        "context": "Greek Rho",
+        "method": "symbolic",
+        "weight": 0.96
+      },
+      {
+        "source": "p",
+        "target": "hu",
+        "context": "Chinese (笏)",
+        "method": "symbolic",
+        "weight": 0.92,
+        "logographic_ref": "scepter"
+      },
+      {
+        "source": "p",
+        "target": "shaku",
+        "context": "Japanese (笏)",
+        "method": "symbolic",
+        "weight": 0.9,
+        "logographic_ref": "scepter"
+      },
+      {
+        "source": "p",
+        "target": "musicnote",
+        "context": "Musical notation",
+        "method": "symbolic",
+        "weight": 0.95
+      },
+      {
+        "source": "p",
+        "target": "yinfu",
+        "context": "Chinese (音符)",
+        "method": "symbolic",
+        "weight": 0.9,
+        "logographic_ref": "musicnote"
+      },
+      {
+        "source": "p",
+        "target": "onpu",
+        "context": "Japanese (音符)",
+        "method": "symbolic",
+        "weight": 0.88,
+        "logographic_ref": "musicnote"
+      },
+      {
+        "source": "p",
+        "target": "gift",
+        "context": "General concept",
+        "method": "symbolic",
+        "weight": 0.97
+      },
+      {
+        "source": "p",
+        "target": "liwu",
+        "context": "Chinese (礼物)",
+        "method": "symbolic",
+        "weight": 0.95,
+        "logographic_ref": "gift"
+      },
+      {
+        "source": "p",
+        "target": "reimotsu",
+        "context": "Japanese (礼物)",
+        "method": "symbolic",
+        "weight": 0.9,
+        "logographic_ref": "gift"
+      },
+      {
+        "source": "p",
+        "target": "gifttogod",
+        "context": "Religious offering",
+        "method": "symbolic",
+        "weight": 0.96
+      },
+      {
+        "source": "p",
+        "target": "jipin",
+        "context": "Chinese (祭品)",
+        "method": "symbolic",
+        "weight": 0.93,
+        "logographic_ref": "gifttogod"
+      },
+      {
+        "source": "p",
+        "target": "giftfromgod",
+        "context": "Divine blessing",
+        "method": "symbolic",
+        "weight": 0.95
+      },
+      {
+        "source": "p",
+        "target": "shenci",
+        "context": "Chinese (神赐)",
+        "method": "symbolic",
+        "weight": 0.9,
+        "logographic_ref": "giftfromgod"
+      },
+      {
+        "source": "p",
+        "target": "sprout",
+        "context": "Early growth",
+        "method": "symbolic",
+        "weight": 0.98
+      },
+      {
+        "source": "p",
+        "target": "miao",
+        "context": "Chinese (苗)",
+        "method": "symbolic",
+        "weight": 0.95,
+        "logographic_ref": "sprout"
+      },
+      {
+        "source": "p",
+        "target": "nae",
+        "context": "Japanese (苗)",
+        "method": "symbolic",
+        "weight": 0.9,
+        "logographic_ref": "sprout"
+      },
+      {
+        "source": "p",
+        "target": "seedling",
+        "context": "Young plant",
+        "method": "symbolic",
+        "weight": 0.97
+      },
+      {
+        "source": "p",
+        "target": "youmiao",
+        "context": "Chinese (幼苗)",
+        "method": "symbolic",
+        "weight": 0.93,
+        "logographic_ref": "seedling"
+      },
+      {
+        "source": "p",
+        "target": "sperm",
+        "context": "Biological",
+        "method": "symbolic",
+        "weight": 0.96
+      },
+      {
+        "source": "p",
+        "target": "jingzi",
+        "context": "Chinese (精子)",
+        "method": "symbolic",
+        "weight": 0.94,
+        "logographic_ref": "sperm"
+      },
+      {
+        "source": "p",
+        "target": "seishi",
+        "context": "Japanese (精子)",
+        "method": "symbolic",
+        "weight": 0.92,
+        "logographic_ref": "sperm"
+      },
+      {
+        "source": "p",
+        "target": "penis",
+        "context": "Phallic symbolism",
+        "method": "symbolic",
+        "weight": 0.99
+      },
+      {
+        "source": "p",
+        "target": "yinjing",
+        "context": "Chinese (阴茎)",
+        "method": "symbolic",
+        "weight": 0.97,
+        "logographic_ref": "penis"
+      },
+      {
+        "source": "p",
+        "target": "inkei",
+        "context": "Japanese (陰茎)",
+        "method": "symbolic",
+        "weight": 0.95,
+        "logographic_ref": "penis"
+      }
+    ]
+  },
+  {
+    "character_id": "Q",
+    "character_transforms": [
+      {
+        "source": "q",
+        "target": "reproductive",
+        "context": "Biological function",
+        "method": "symbolic",
+        "weight": 0.99
+      },
+      {
+        "source": "q",
+        "target": "queen",
+        "context": "Royal fertility",
+        "method": "symbolic",
+        "weight": 0.98
+      },
+      {
+        "source": "q",
+        "target": "scepter",
+        "context": "Symbol of generative power",
+        "method": "symbolic",
+        "weight": 0.95
+      },
+      {
+        "source": "q",
+        "target": "seedling",
+        "context": "Young plant",
+        "method": "symbolic",
+        "weight": 0.96
+      },
+      {
+        "source": "q",
+        "target": "youmiao",
+        "context": "Chinese (幼苗)",
+        "method": "symbolic",
+        "weight": 0.94,
+        "logographic_ref": "seedling"
+      },
+      {
+        "source": "q",
+        "target": "sprout",
+        "context": "Early growth",
+        "method": "symbolic",
+        "weight": 0.97
+      },
+      {
+        "source": "q",
+        "target": "miao",
+        "context": "Chinese (苗)",
+        "method": "symbolic",
+        "weight": 0.95,
+        "logographic_ref": "sprout"
+      },
+      {
+        "source": "q",
+        "target": "plant",
+        "context": "Mature organism",
+        "method": "symbolic",
+        "weight": 0.95
+      },
+      {
+        "source": "q",
+        "target": "zhiwu",
+        "context": "Chinese (植物)",
+        "method": "symbolic",
+        "weight": 0.93,
+        "logographic_ref": "plant"
+      },
+      {
+        "source": "q",
+        "target": "sperm",
+        "context": "Reproductive essence",
+        "method": "symbolic",
+        "weight": 0.97
+      },
+      {
+        "source": "q",
+        "target": "quiver",
+        "context": "Seed container",
+        "method": "symbolic",
+        "weight": 0.94
+      },
+      {
+        "source": "q",
+        "target": "gift",
+        "context": "Offering for fertility",
+        "method": "symbolic",
+        "weight": 1.0
+      },
+      {
+        "source": "q",
+        "target": "giftfromgod",
+        "context": "Divine conception",
+        "method": "symbolic",
+        "weight": 0.95
+      },
+      {
+        "source": "q",
+        "target": "gifttogod",
+        "context": "Offering for fertility",
+        "method": "symbolic",
+        "weight": 0.93
+      }
+    ]
+  },
+  {
+    "character_id": "R",
+    "character_transforms": [
+      {
+        "source": "r",
+        "target": "pirate",
+        "context": "Maritime rebellion",
+        "method": "symbolic",
+        "weight": 1.0
+      },
+      {
+        "source": "r",
+        "target": "haidao",
+        "context": "Chinese (海盗)",
+        "method": "symbolic",
+        "weight": 0.95,
+        "logographic_ref": "pirate"
+      },
+      {
+        "source": "r",
+        "target": "hook",
+        "context": "Pirate implement",
+        "method": "symbolic",
+        "weight": 0.97
+      },
+      {
+        "source": "r",
+        "target": "gou",
+        "context": "Chinese (钩)",
+        "method": "symbolic",
+        "weight": 0.93,
+        "logographic_ref": "hook"
+      },
+      {
+        "source": "r",
+        "target": "sickle",
+        "context": "Agricultural tool",
+        "method": "symbolic",
+        "weight": 0.96
+      },
+      {
+        "source": "r",
+        "target": "liandao",
+        "context": "Chinese (镰刀)",
+        "method": "symbolic",
+        "weight": 0.94,
+        "logographic_ref": "sickle"
+      },
+      {
+        "source": "r",
+        "target": "capitol",
+        "context": "Seat of government",
+        "method": "symbolic",
+        "weight": 0.95
+      },
+      {
+        "source": "r",
+        "target": "shoudu",
+        "context": "Chinese (首都)",
+        "method": "symbolic",
+        "weight": 0.92,
+        "logographic_ref": "capitol"
+      },
+      {
+        "source": "r",
+        "target": "sun",
+        "context": "Celestial body",
+        "method": "symbolic",
+        "weight": 0.98
+      },
+      {
+        "source": "r",
+        "target": "tai",
+        "context": "Chinese (太)",
+        "method": "symbolic",
+        "weight": 0.95,
+        "logographic_ref": "sun"
+      },
+      {
+        "source": "r",
+        "target": "king",
+        "context": "Royal authority",
+        "method": "symbolic",
+        "weight": 0.99
+      },
+      {
+        "source": "r",
+        "target": "wang",
+        "context": "Chinese (王)",
+        "method": "symbolic",
+        "weight": 0.97,
+        "logographic_ref": "king"
+      }
+    ]
+  },
+  {
+    "character_id": "S",
+    "character_transforms": [
+      {
+        "source": "s",
+        "target": "snake",
+        "context": "Egyptian",
+        "method": "symbolic",
+        "weight": 1.0
+      },
+      {
+        "source": "s",
+        "target": "she",
+        "context": "Chinese (蛇)",
+        "method": "symbolic",
+        "weight": 0.95,
+        "logographic_ref": "snake"
+      },
+      {
+        "source": "s",
+        "target": "tidal wave",
+        "context": "Greek",
+        "method": "symbolic",
+        "weight": 0.85
+      },
+      {
+        "source": "s",
+        "target": "bo",
+        "context": "Chinese (波)",
+        "method": "symbolic",
+        "weight": 0.9,
+        "logographic_ref": "tidal wave"
+      },
+      {
+        "source": "s",
+        "target": "ass",
+        "context": "Anatomical",
+        "method": "symbolic",
+        "weight": 0.95
+      },
+      {
+        "source": "s",
+        "target": "tun",
+        "context": "Chinese (臀)",
+        "method": "symbolic",
+        "weight": 0.9,
+        "logographic_ref": "ass"
+      },
+      {
+        "source": "s",
+        "target": "shiri",
+        "context": "Japanese (尻)",
+        "method": "symbolic",
+        "weight": 0.85,
+        "logographic_ref": "ass"
+      }
+    ]
+  },
+  {
+    "character_id": "T",
+    "character_transforms": [
+      {
+        "source": "t",
+        "target": "cross",
+        "context": "Christian",
+        "method": "symbolic",
+        "weight": 1.0
+      },
+      {
+        "source": "t",
+        "target": "shi",
+        "context": "Chinese (十)",
+        "method": "symbolic",
+        "weight": 0.95,
+        "logographic_ref": "cross"
+      },
+      {
+        "source": "t",
+        "target": "mast",
+        "context": "Maritime",
+        "method": "symbolic",
+        "weight": 0.9
+      },
+      {
+        "source": "t",
+        "target": "wei",
+        "context": "Chinese (桅)",
+        "method": "symbolic",
+        "weight": 0.88,
+        "logographic_ref": "mast"
+      },
+      {
+        "source": "t",
+        "target": "mark",
+        "context": "Identification",
+        "method": "symbolic",
+        "weight": 0.97
+      },
+      {
+        "source": "t",
+        "target": "biaoji",
+        "context": "Chinese (标记)",
+        "method": "symbolic",
+        "weight": 0.95,
+        "logographic_ref": "mark"
+      },
+      {
+        "source": "t",
+        "target": "xmarks",
+        "context": "Identification",
+        "method": "symbolic",
+        "weight": 0.92
+      },
+      {
+        "source": "t",
+        "target": "xmarksthespot",
+        "context": "Cartography",
+        "method": "symbolic",
+        "weight": 0.94
+      },
+      {
+        "source": "t",
+        "target": "biaoji",
+        "context": "Chinese (标记)",
+        "method": "symbolic",
+        "weight": 0.88,
+        "logographic_ref": "xmarksthespot"
+      },
+      {
+        "source": "t",
+        "target": "tree",
+        "context": "Norse Yggdrasil",
+        "method": "symbolic",
+        "weight": 0.95
+      },
+      {
+        "source": "t",
+        "target": "mu",
+        "context": "Chinese (木)",
+        "method": "symbolic",
+        "weight": 0.97,
+        "logographic_ref": "tree"
+      },
+      {
+        "source": "t",
+        "target": "screw",
+        "context": "Industrial",
+        "method": "symbolic",
+        "weight": 0.93
+      },
+      {
+        "source": "t",
+        "target": "luoding",
+        "context": "Chinese (螺钉)",
+        "method": "symbolic",
+        "weight": 0.9,
+        "logographic_ref": "screw"
+      },
+      {
+        "source": "t",
+        "target": "oilrig",
+        "context": "Petroleum",
+        "method": "symbolic",
+        "weight": 0.91
+      },
+      {
+        "source": "t",
+        "target": "zuanji",
+        "context": "Chinese (钻机)",
+        "method": "symbolic",
+        "weight": 0.92,
+        "logographic_ref": "oilrig"
+      },
+      {
+        "source": "t",
+        "target": "time",
+        "context": "Horology",
+        "method": "symbolic",
+        "weight": 0.96
+      },
+      {
+        "source": "t",
+        "target": "shi",
+        "context": "Chinese (时)",
+        "method": "symbolic",
+        "weight": 0.97,
+        "logographic_ref": "time"
+      },
+      {
+        "source": "t",
+        "target": "knife",
+        "context": "Culinary",
+        "method": "symbolic",
+        "weight": 0.95
+      },
+      {
+        "source": "t",
+        "target": "dao",
+        "context": "Chinese (刀)",
+        "method": "symbolic",
+        "weight": 0.98,
+        "logographic_ref": "knife"
+      },
+      {
+        "source": "t",
+        "target": "sex",
+        "context": "Biology",
+        "method": "symbolic",
+        "weight": 0.96
+      },
+      {
+        "source": "t",
+        "target": "xing",
+        "context": "Chinese (性)",
+        "method": "symbolic",
+        "weight": 0.94,
+        "logographic_ref": "sex"
+      },
+      {
+        "source": "t",
+        "target": "console",
+        "context": "Gaming",
+        "method": "symbolic",
+        "weight": 0.92
+      },
+      {
+        "source": "t",
+        "target": "kongzhitai",
+        "context": "Chinese (控制台)",
+        "method": "symbolic",
+        "weight": 0.9,
+        "logographic_ref": "console"
+      },
+      {
+        "source": "t",
+        "target": "tee",
+        "context": "Golf",
+        "method": "symbolic",
+        "weight": 0.93
+      },
+      {
+        "source": "t",
+        "target": "ti",
+        "context": "Japanese (ティー)",
+        "method": "symbolic",
+        "weight": 0.88,
+        "logographic_ref": "tee"
+      },
+      {
+        "source": "t",
+        "target": "tea",
+        "context": "Beverage",
+        "method": "symbolic",
+        "weight": 0.95
+      },
+      {
+        "source": "t",
+        "target": "cha",
+        "context": "Chinese (茶)",
+        "method": "symbolic",
+        "weight": 0.97,
+        "logographic_ref": "tea"
+      }
+    ]
+  },
+  {
+    "character_id": "U",
+    "character_transforms": [
+      {
+        "source": "u",
+        "target": "you",
+        "context": "English pronoun",
+        "method": "symbolic",
+        "weight": 0.99
+      },
+      {
+        "source": "u",
+        "target": "ni",
+        "context": "Chinese (你)",
+        "method": "symbolic",
+        "weight": 0.95,
+        "logographic_ref": "you"
+      },
+      {
+        "source": "u",
+        "target": "turnedmound",
+        "context": "Archaeological / earth formation",
+        "method": "symbolic",
+        "weight": 1.0
+      },
+      {
+        "source": "u",
+        "target": "qiu",
+        "context": "Chinese (丘)",
+        "method": "symbolic",
+        "weight": 0.9,
+        "logographic_ref": "turnedmound"
+      },
+      {
+        "source": "u",
+        "target": "boat",
+        "context": "Naval architecture",
+        "method": "symbolic",
+        "weight": 0.95
+      },
+      {
+        "source": "u",
+        "target": "chuan",
+        "context": "Chinese (船)",
+        "method": "symbolic",
+        "weight": 0.93,
+        "logographic_ref": "boat"
+      },
+      {
+        "source": "u",
+        "target": "valley",
+        "context": "Geological formation",
+        "method": "symbolic",
+        "weight": 0.91
+      },
+      {
+        "source": "u",
+        "target": "gu",
+        "context": "Chinese (谷)",
+        "method": "symbolic",
+        "weight": 0.89,
+        "logographic_ref": "valley"
+      },
+      {
+        "source": "u",
+        "target": "cup",
+        "context": "Vessel symbolism",
+        "method": "symbolic",
+        "weight": 0.94
+      },
+      {
+        "source": "u",
+        "target": "bei",
+        "context": "Chinese (杯)",
+        "method": "symbolic",
+        "weight": 0.92,
+        "logographic_ref": "cup"
+      },
+      {
+        "source": "u",
+        "target": "womb",
+        "context": "Symbol of containment, generation",
+        "method": "symbolic",
+        "weight": 0.95
+      },
+      {
+        "source": "u",
+        "target": "zigong",
+        "context": "Chinese (子宮)",
+        "method": "symbolic",
+        "weight": 0.92,
+        "logographic_ref": "womb"
+      },
+      {
+        "source": "u",
+        "target": "shikyu",
+        "context": "Japanese (子宮)",
+        "method": "symbolic",
+        "weight": 0.9,
+        "logographic_ref": "womb"
+      }
+    ]
+  },
+  {
+    "character_id": "V",
+    "character_transforms": [
+      {
+        "source": "v",
+        "target": "split",
+        "context": "Division",
+        "method": "symbolic",
+        "weight": 0.91
+      },
+      {
+        "source": "v",
+        "target": "fly",
+        "context": "Aviation",
+        "method": "symbolic",
+        "weight": 0.98
+      },
+      {
+        "source": "v",
+        "target": "fei",
+        "context": "Chinese (飞)",
+        "method": "symbolic",
+        "weight": 0.97,
+        "logographic_ref": "fly"
+      },
+      {
+        "source": "v",
+        "target": "bird",
+        "context": "Ornithology",
+        "method": "symbolic",
+        "weight": 0.96
+      },
+      {
+        "source": "v",
+        "target": "niao",
+        "context": "Chinese (鸟)",
+        "method": "symbolic",
+        "weight": 0.95,
+        "logographic_ref": "bird"
+      },
+      {
+        "source": "v",
+        "target": "tuying",
+        "context": "Chinese (秃鹰)",
+        "method": "symbolic",
+        "weight": 0.92,
+        "logographic_ref": "bird"
+      },
+      {
+        "source": "v",
+        "target": "ruler",
+        "context": "Governance",
+        "method": "symbolic",
+        "weight": 0.97
+      },
+      {
+        "source": "v",
+        "target": "chi",
+        "context": "Chinese (尺)",
+        "method": "symbolic",
+        "weight": 0.9,
+        "logographic_ref": "ruler"
+      },
+      {
+        "source": "v",
+        "target": "woman",
+        "context": "Biology",
+        "method": "symbolic",
+        "weight": 0.99
+      },
+      {
+        "source": "v",
+        "target": "nu",
+        "context": "Chinese (女)",
+        "method": "symbolic",
+        "weight": 0.98,
+        "logographic_ref": "woman"
+      },
+      {
+        "source": "v",
+        "target": "nuhuang",
+        "context": "Chinese (女皇)",
+        "method": "symbolic",
+        "weight": 0.95,
+        "logographic_ref": "woman"
+      }
+    ]
+  },
+  {
+    "character_id": "W",
+    "character_transforms": [
+      {
+        "source": "w",
+        "target": "wake",
+        "context": "Nautical",
+        "method": "symbolic",
+        "weight": 0.97
+      },
+      {
+        "source": "w",
+        "target": "nami-ato",
+        "context": "Japanese (波跡)",
+        "method": "symbolic",
+        "weight": 0.95,
+        "logographic_ref": "wake"
+      },
+      {
+        "source": "w",
+        "target": "water",
+        "context": "Hydrology",
+        "method": "symbolic",
+        "weight": 0.99
+      },
+      {
+        "source": "w",
+        "target": "shui",
+        "context": "Chinese (水)",
+        "method": "symbolic",
+        "weight": 0.98,
+        "logographic_ref": "water"
+      },
+      {
+        "source": "w",
+        "target": "twosplit",
+        "context": "Topology",
+        "method": "symbolic",
+        "weight": 1.0
+      },
+      {
+        "source": "w",
+        "target": "bunki",
+        "context": "Japanese (分岐)",
+        "method": "symbolic",
+        "weight": 0.93,
+        "logographic_ref": "twosplit"
+      },
+      {
+        "source": "w",
+        "target": "wave",
+        "context": "Oceanography",
+        "method": "symbolic",
+        "weight": 0.98
+      },
+      {
+        "source": "w",
+        "target": "nami",
+        "context": "Japanese (波)",
+        "method": "symbolic",
+        "weight": 0.97,
+        "logographic_ref": "wave"
+      },
+      {
+        "source": "w",
+        "target": "bird",
+        "context": "Ornithology",
+        "method": "symbolic",
+        "weight": 0.95
+      },
+      {
+        "source": "w",
+        "target": "shuiniao",
+        "context": "Chinese (水鸟)",
+        "method": "symbolic",
+        "weight": 0.94,
+        "logographic_ref": "bird"
+      },
+      {
+        "source": "w",
+        "target": "threepoints",
+        "context": "Navigation",
+        "method": "symbolic",
+        "weight": 0.94
+      },
+      {
+        "source": "w",
+        "target": "santenshiki",
+        "context": "Japanese (三点式)",
+        "method": "symbolic",
+        "weight": 0.9,
+        "logographic_ref": "threepoints"
+      }
+    ]
+  },
+  {
+    "character_id": "X",
+    "character_transforms": [
+      {
+        "source": "x",
+        "target": "cross",
+        "context": "Religious",
+        "method": "symbolic",
+        "weight": 0.99
+      },
+      {
+        "source": "x",
+        "target": "shi",
+        "context": "Chinese (十)",
+        "method": "symbolic",
+        "weight": 0.98,
+        "logographic_ref": "cross"
+      },
+      {
+        "source": "x",
+        "target": "sex",
+        "context": "Genetics",
+        "method": "symbolic",
+        "weight": 1.0
+      },
+      {
+        "source": "x",
+        "target": "xing",
+        "context": "Chinese (性)",
+        "method": "symbolic",
+        "weight": 0.97,
+        "logographic_ref": "sex"
+      },
+      {
+        "source": "x",
+        "target": "mark",
+        "context": "Identification",
+        "method": "symbolic",
+        "weight": 0.97
+      },
+      {
+        "source": "x",
+        "target": "biaoji",
+        "context": "Chinese (标记)",
+        "method": "symbolic",
+        "weight": 0.96,
+        "logographic_ref": "mark"
+      },
+      {
+        "source": "x",
+        "target": "xmarks",
+        "context": "Verification",
+        "method": "symbolic",
+        "weight": 0.96
+      },
+      {
+        "source": "x",
+        "target": "jianding",
+        "context": "Chinese (检定)",
+        "method": "symbolic",
+        "weight": 0.93,
+        "logographic_ref": "xmarks"
+      },
+      {
+        "source": "x",
+        "target": "xmarksthespot",
+        "context": "Cartography",
+        "method": "symbolic",
+        "weight": 0.98
+      },
+      {
+        "source": "x",
+        "target": "cangbaodi",
+        "context": "Chinese (藏宝地)",
+        "method": "symbolic",
+        "weight": 0.95,
+        "logographic_ref": "xmarksthespot"
+      },
+      {
+        "source": "x",
+        "target": "perpendicularlines",
+        "context": "Geometry",
+        "method": "symbolic",
+        "weight": 0.95
+      },
+      {
+        "source": "x",
+        "target": "chuizhi",
+        "context": "Chinese (垂直)",
+        "method": "symbolic",
+        "weight": 0.96,
+        "logographic_ref": "perpendicularlines"
+      },
+      {
+        "source": "x",
+        "target": "chi",
+        "context": "Sacred Geometry",
+        "method": "symbolic",
+        "weight": 0.97
+      },
+      {
+        "source": "x",
+        "target": "kai",
+        "context": "Greek (Χ)",
+        "method": "symbolic",
+        "weight": 0.99,
+        "logographic_ref": "chi"
+      },
+      {
+        "source": "x",
+        "target": "cosmicintersection",
+        "context": "Astronomy",
+        "method": "symbolic",
+        "weight": 0.99
+      },
+      {
+        "source": "x",
+        "target": "yuzhou jiaocha",
+        "context": "Chinese (宇宙交叉)",
+        "method": "symbolic",
+        "weight": 0.98,
+        "logographic_ref": "cosmicintersection"
+      }
+    ]
+  },
+  {
+    "character_id": "Y",
+    "character_transforms": [
+      {
+        "source": "y",
+        "target": "why",
+        "context": "Philosophical",
+        "method": "symbolic",
+        "weight": 0.99
+      },
+      {
+        "source": "y",
+        "target": "weisheme",
+        "context": "Chinese (为什么)",
+        "method": "symbolic",
+        "weight": 0.97,
+        "logographic_ref": "why"
+      },
+      {
+        "source": "y",
+        "target": "girl",
+        "context": "Anthropology",
+        "method": "symbolic",
+        "weight": 0.96
+      },
+      {
+        "source": "y",
+        "target": "shojo",
+        "context": "Japanese (少女)",
+        "method": "symbolic",
+        "weight": 0.98,
+        "logographic_ref": "girl"
+      },
+      {
+        "source": "y",
+        "target": "littlegirl",
+        "context": "Pediatrics",
+        "method": "symbolic",
+        "weight": 0.95
+      },
+      {
+        "source": "y",
+        "target": "xiao nuhai",
+        "context": "Chinese (小女孩)",
+        "method": "symbolic",
+        "weight": 0.96,
+        "logographic_ref": "littlegirl"
+      },
+      {
+        "source": "y",
+        "target": "tear",
+        "context": "Ophthalmology",
+        "method": "symbolic",
+        "weight": 0.94
+      },
+      {
+        "source": "y",
+        "target": "namida",
+        "context": "Japanese (涙)",
+        "method": "symbolic",
+        "weight": 0.95,
+        "logographic_ref": "tear"
+      },
+      {
+        "source": "y",
+        "target": "moon",
+        "context": "Astronomy",
+        "method": "symbolic",
+        "weight": 0.98
+      },
+      {
+        "source": "y",
+        "target": "yue",
+        "context": "Chinese (月)",
+        "method": "symbolic",
+        "weight": 0.99,
+        "logographic_ref": "moon"
+      },
+      {
+        "source": "y",
+        "target": "tears",
+        "context": "Emotional",
+        "method": "symbolic",
+        "weight": 0.97
+      },
+      {
+        "source": "y",
+        "target": "leishui",
+        "context": "Chinese (泪水)",
+        "method": "symbolic",
+        "weight": 0.96,
+        "logographic_ref": "tears"
+      },
+      {
+        "source": "y",
+        "target": "tuningfork",
+        "context": "Acoustics",
+        "method": "symbolic",
+        "weight": 0.95
+      },
+      {
+        "source": "y",
+        "target": "yincha",
+        "context": "Chinese (音叉)",
+        "method": "symbolic",
+        "weight": 0.94,
+        "logographic_ref": "tuningfork"
+      },
+      {
+        "source": "y",
+        "target": "light",
+        "context": "Optics",
+        "method": "symbolic",
+        "weight": 0.97
+      },
+      {
+        "source": "y",
+        "target": "hikari",
+        "context": "Japanese (光)",
+        "method": "symbolic",
+        "weight": 0.98,
+        "logographic_ref": "light"
+      },
+      {
+        "source": "y",
+        "target": "cry",
+        "context": "Psychology",
+        "method": "symbolic",
+        "weight": 0.96
+      },
+      {
+        "source": "y",
+        "target": "ku",
+        "context": "Chinese (哭)",
+        "method": "symbolic",
+        "weight": 0.97,
+        "logographic_ref": "cry"
+      }
+    ]
+  },
+  {
+    "character_id": "Z",
+    "character_transforms": [
+      {
+        "source": "z",
+        "target": "snake",
+        "context": "Mythological",
+        "method": "symbolic",
+        "weight": 0.98
+      },
+      {
+        "source": "z",
+        "target": "she",
+        "context": "Chinese (蛇)",
+        "method": "symbolic",
+        "weight": 0.97,
+        "logographic_ref": "snake"
+      },
+      {
+        "source": "z",
+        "target": "s",
+        "context": "Linguistic",
+        "method": "symbolic",
+        "weight": 0.99
+      },
+      {
+        "source": "z",
+        "target": "esu",
+        "context": "Japanese (エス)",
+        "method": "symbolic",
+        "weight": 0.95,
+        "logographic_ref": "s"
+      },
+      {
+        "source": "z",
+        "target": "cobra",
+        "context": "Herpetology",
+        "method": "symbolic",
+        "weight": 0.96
+      },
+      {
+        "source": "z",
+        "target": "yanjing she",
+        "context": "Chinese (眼镜蛇)",
+        "method": "symbolic",
+        "weight": 0.94,
+        "logographic_ref": "cobra"
+      },
+      {
+        "source": "z",
+        "target": "zero",
+        "context": "Mathematics",
+        "method": "symbolic",
+        "weight": 0.99
+      },
+      {
+        "source": "z",
+        "target": "ling",
+        "context": "Chinese (零)",
+        "method": "symbolic",
+        "weight": 0.98,
+        "logographic_ref": "zero"
+      },
+      {
+        "source": "z",
+        "target": "zombie",
+        "context": "Folklore",
+        "method": "symbolic",
+        "weight": 0.97
+      },
+      {
+        "source": "z",
+        "target": "jiangshi",
+        "context": "Chinese (殭屍)",
+        "method": "symbolic",
+        "weight": 0.96,
+        "logographic_ref": "zombie"
+      }
+    ]
+  }
+]
