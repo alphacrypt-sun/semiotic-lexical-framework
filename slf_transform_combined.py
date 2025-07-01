@@ -39,16 +39,6 @@ def calc_diff(src, tgt):
     return " ".join(s)
 
 class TransformEngine:
-    def get_branch_forward_seed(self, branch_name=None):
-        '''Return the forward seed for a given branch.'''
-        if branch_name is None:
-            branch_name = getattr(self, 'branch', 'main')
-        nodes = self.load_tree()
-        # Use the first target found for the branch
-        for n in nodes.values():
-            if n.get('branch', 'main') == branch_name:
-                return n['target']
-        return self.working_seed
     def __init__(self, metadata_paths: list[str], seed: str):
         self._startup(metadata_paths, seed)
 
@@ -128,7 +118,7 @@ class TransformEngine:
         self.tree_log = pathlib.Path("seed_tree.jsonl")
         self.id_base = str(uuid.uuid4())
         self.id_count = 10
-        self.working_seed = self.get_branch_forward_seed(getattr(self, 'branch', 'main'))
+        self.working_seed = self._normalize(initial_seed)
         self.prev_working_seed = self.working_seed
         self.up_seed = ""
         self.down_seed = ""
@@ -562,10 +552,6 @@ Help — SLF Menu Commands:
         print(f"Reversed: {self.working_seed}")
 
     def manual_enter_seed(self):
-    d    # On first enter, set to branch forward seed
-    d    if not hasattr(self, '_seed_menu_opened'):
-    d        self.working_seed = self.get_branch_forward_seed(getattr(self, 'branch', 'main'))
-    d        self._seed_menu_opened = True
         try:
             s = prompt("New seed >").strip()
         except (EOFError, KeyboardInterrupt):
@@ -649,16 +635,6 @@ Help — SLF Menu Commands:
             print("Node id not found.")
             return
         n = nodes[goto_id]
-    d    # On first entry to a branch, set to branch forward seed
-    d    if not hasattr(self, '_entered_branches'):
-    d        self._entered_branches = set()
-    d    branch_name = n.get('branch', 'main')
-    d    if branch_name not in self._entered_branches:
-    d        self.working_seed = self.get_branch_forward_seed(branch_name)
-    d        self._entered_branches.add(branch_name)
-    d    else:
-    d        self.working_seed = n['target']
-    d    self.prev_working_seed = self.working_seed
         self.working_seed = n['target']
         self.prev_working_seed = self.working_seed
         self.current_node_id = n['id']
@@ -708,6 +684,9 @@ Help — SLF Menu Commands:
             if subsel.isdigit() and 1 <= int(subsel) <= len(targets):
                 chosen_target, chosen_branch = targets[int(subsel)-1]
                 print(f"Jump: {root} \u2192 {chosen_target} [{chosen_branch}]")
+                self.working_seed = chosen_target
+                self.branch = chosen_branch
+                print(f"Working seed set to {chosen_target}, branch {chosen_branch}")
 
     def close(self):
         if hasattr(self, "conn") and self.conn:
@@ -755,3 +734,85 @@ if __name__ == '__main__':
     ap.add_argument('-s','--seed', default='')
     args = ap.parse_args()
     interactive_loop(TransformEngine(args.metadata, args.seed))
+
+
+# === INTERFACE START ===
+from colorama import Fore, Style, init
+init(autoreset=True)
+import os
+
+def clear_screen():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+def print_status(engine):
+    print(f"\n{Fore.CYAN}{'═'*40}")
+    print(f"{Fore.GREEN}🌱  SLF Transform Engine — v1.7.4")
+    print(f"{Fore.CYAN}{'═'*40}")
+    print(f"{Fore.YELLOW}🔤 Seed      : {Style.BRIGHT}{engine.working_seed}")
+    print(f"{Fore.BLUE}🔼 Up Seed   : {Style.BRIGHT}{engine.up_seed}")
+    print(f"{Fore.MAGENTA}🔽 Down Seed : {Style.BRIGHT}{engine.down_seed}")
+    branch_info = "← Reverse" if engine.reverse_mode else "→ Forward"
+    print(f"{Fore.LIGHTBLACK_EX}📍 Branch    : {branch_info} {Fore.LIGHTWHITE_EX}| Step {engine.step}")
+    print(f"{Fore.CYAN}{'─'*40}")
+    print(f"{Fore.WHITE}🆔 Node ID   : {Style.BRIGHT}{engine.current_node_id}")
+
+def help():
+    print(f"""
+{Fore.GREEN}{Style.BRIGHT}📘 Help — SLF Menu Commands:{Style.RESET_ALL}
+
+{Fore.YELLOW}{Style.BRIGHT}[1a] Symbolic        {Style.RESET_ALL}→ Parquet letter/meaning transform
+{Fore.YELLOW}{Style.BRIGHT}[1b] Phonetic        {Style.RESET_ALL}→ Phonetic substitutions
+{Fore.YELLOW}{Style.BRIGHT}[1c] Acronym         {Style.RESET_ALL}→ State/company/country/stock mappings
+{Fore.YELLOW}{Style.BRIGHT}[1d] Dictionary Scan {Style.RESET_ALL}→ Wordlist-based fuzzy match
+{Fore.YELLOW}{Style.BRIGHT}[1e] Jump            {Style.RESET_ALL}→ Fast jump to unique targets
+
+{Fore.CYAN}{Style.BRIGHT}[2]  Reverse           {Style.RESET_ALL}→ Reverse the working seed
+{Fore.CYAN}{Style.BRIGHT}[3]  New Seed          {Style.RESET_ALL}→ Enter new root
+{Fore.CYAN}{Style.BRIGHT}[4]  Add (Up)          {Style.RESET_ALL}→ Append letters
+{Fore.CYAN}{Style.BRIGHT}[5]  Remove (Down)     {Style.RESET_ALL}→ Remove letters
+{Fore.CYAN}{Style.BRIGHT}[7]  Select Seed       {Style.RESET_ALL}→ Branch to Up, Down, or stay
+
+{Fore.MAGENTA}{Style.BRIGHT}[8]  List Nodes     {Style.RESET_ALL}→ Full session log
+{Fore.MAGENTA}{Style.BRIGHT}[9]  View Tree      {Style.RESET_ALL}→ Parent-child visual tree
+{Fore.MAGENTA}{Style.BRIGHT}[11] Description    {Style.RESET_ALL}→ Add narrative to next commit
+
+{Fore.RED}{Style.BRIGHT}[goto]  Goto Node       {Style.RESET_ALL}→ Jump to previous ID
+{Fore.RED}{Style.BRIGHT}[q]     Quit            {Style.RESET_ALL}→ Exit the engine
+""")
+
+def interactive_loop(engine):
+    cmds = (
+        f"{Style.BRIGHT}[1a sym 1b phon 1c acr 1d dict 1e jump "
+        f"2 rev 3 enter 4 up add 5 down remove 7 select 8 list 9 tree 11 desc goto help q quit]{Style.RESET_ALL}> "
+    )
+    while True:
+        clear_screen()
+        print_status(engine)
+        try:
+            cmd = input(Fore.LIGHTCYAN_EX + cmds + Style.RESET_ALL).strip().lower()
+        except (EOFError, KeyboardInterrupt):
+            print("\nSession ended.")
+            break
+
+        if cmd == '1a': engine.symbolic_transform()
+        elif cmd == '1b': engine.phonetic_transform()
+        elif cmd == '1c': engine.acronym_transform()
+        elif cmd == '1d': engine.smart_dict_scan()
+        elif cmd == '1e': engine.jump_1e()
+        elif cmd == '2': engine.reverse_transform()
+        elif cmd == '3': engine.manual_enter_seed()
+        elif cmd in ('4','up','add'): engine.manual_up_add()
+        elif cmd in ('5','down','remove'): engine.manual_down_remove()
+        elif cmd in ('7','select'): engine.select()
+        elif cmd in ('8','list'): engine.print_list()
+        elif cmd in ('9','tree'): engine.print_tree()
+        elif cmd in ('11','desc','description'): engine.add_description()
+        elif cmd == 'goto': engine.goto()
+        elif cmd == 'help': help()
+        elif cmd in ('q','quit'): break
+        else: print(f"{Fore.RED}Unknown command.{Style.RESET_ALL}")
+
+        engine._commit_node()
+
+    engine.close()
+    print("Bye.")
