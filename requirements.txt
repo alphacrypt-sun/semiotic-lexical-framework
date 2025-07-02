@@ -1,3 +1,4 @@
 pandas
-prompt_toolkit
 pyarrow
+prompt_toolkit
+rich

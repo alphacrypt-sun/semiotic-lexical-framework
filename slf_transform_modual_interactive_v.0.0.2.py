@@ -20,6 +20,56 @@ import time
 import sqlite3
 from collections import Counter, defaultdict
 import pandas as pd
+
+from rich.console import Console
+from rich.panel import Panel
+from rich.table import Table
+from rich import box
+from time import sleep
+
+console = Console()
+previous_outputs = set()
+
+def show_menu():
+    menu_table = Table(show_header=False, box=box.ROUNDED, width=60)
+    menu_table.add_row("[bold cyan]1a[/bold cyan]", "Symbolic Transform")
+    menu_table.add_row("[bold cyan]1b[/bold cyan]", "Phonetic Transform")
+    menu_table.add_row("[bold cyan]1c[/bold cyan]", "Acronym Transform")
+    menu_table.add_row("[bold cyan]1d[/bold cyan]", "Dictionary Scan")
+    menu_table.add_row("[bold cyan]1e[/bold cyan]", "Jump Menu")
+    menu_table.add_row("[bold cyan]2[/bold cyan]", "Reverse Transform")
+    menu_table.add_row("[bold cyan]3[/bold cyan]", "Manual Enter Seed")
+    menu_table.add_row("[bold cyan]4[/bold cyan]", "Up Add")
+    menu_table.add_row("[bold cyan]5[/bold cyan]", "Down Remove")
+    menu_table.add_row("[bold cyan]7[/bold cyan]", "Select")
+    menu_table.add_row("[bold cyan]8[/bold cyan]", "List")
+    menu_table.add_row("[bold cyan]9[/bold cyan]", "Tree")
+    menu_table.add_row("[bold cyan]10[/bold cyan]", "Branch")
+    menu_table.add_row("[bold cyan]11[/bold cyan]", "Description")
+    menu_table.add_row("[bold cyan]reset[/bold cyan]", "Reset Working")
+    menu_table.add_row("[bold cyan]goto[/bold cyan]", "Goto Node")
+    menu_table.add_row("[bold cyan]help[/bold cyan]", "Help")
+    menu_table.add_row("[bold cyan]q/quit[/bold cyan]", "Quit")
+    console.print(Panel(menu_table, title="[bold green]Main Menu[/bold green]", border_style="green"))
+
+def show_status(engine):
+    status = (
+        f"[bold magenta]Work:[/bold magenta] [white]{engine.working_seed}[/white]\n"
+        f"[bold yellow]Up:[/bold yellow] [white]{engine.up_seed}[/white]\n"
+        f"[bold blue]Down:[/bold blue] [white]{engine.down_seed}[/white]\n"
+        f"[bold cyan]Node:[/bold cyan] [white]{getattr(engine, 'current_node_id', '?')}[/white]\n"
+        f"[bold green]Step:[/bold green] [white]{engine.step}[/white]\n"
+        f"[bold red]Branch:[/bold red] [white]{engine.branch}[/white]"
+    )
+    console.print(Panel(status, title="[bold white]Status[/bold white]", border_style="cyan"))
+
+def print_if_unique(output):
+    if output not in previous_outputs:
+        console.print(Panel(output, border_style="blue"))
+        previous_outputs.add(output)
+    else:
+        console.print("[yellow]Duplicate output skipped.[/yellow]")
+
 from prompt_toolkit import prompt
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
@@ -39,8 +89,8 @@ def calc_diff(src, tgt):
     return " ".join(s)
 
 class TransformEngine:
-    def __init__(self, metadata_paths: list[str], seed: str):
-        self._startup(metadata_paths, seed)
+    def __init__(self, metadata_paths: list[str], seed: str, author: str = None):
+        self._startup(metadata_paths, seed, author)
 
     def _init_db(self):
         self.db_path = "transform_history.db"
@@ -88,37 +138,44 @@ class TransformEngine:
         ''', (now_iso(), source, target, reversal, identical, branch, int(received_up), int(received_down)))
         self.conn.commit()
 
-    def _startup(self, metadata_paths: list[str], seed: str):
+    def _startup(self, metadata_paths: list[str], seed: str, author: str = None):
         self._init_db()
-        while True:
-            try:
-                self.author = prompt("Enter author name: ").strip()
-            except (EOFError, KeyboardInterrupt):
-                print("\nAborted.")
-                sys.exit(0)
-            if self.author:
-                break
-            print("Author name cannot be empty.")
+        if author:
+            self.author = author
+        else:
+            while True:
+                try:
+                    self.author = prompt("Enter author name: ").strip()
+                except (EOFError, KeyboardInterrupt):
+                    print("\nAborted.")
+                    sys.exit(0)
+                if self.author:
+                    break
+                print("Author name cannot be empty.")
 
-        while True:
-            try:
-                initial_seed = prompt("Enter initial seed: ").strip()
-            except (EOFError, KeyboardInterrupt):
-                print("\nAborted.")
-                sys.exit(0)
-            if initial_seed:
-                break
-            print("Seed cannot be empty.")
+        if seed:
+            initial_seed = seed
+        else:
+            while True:
+                try:
+                    initial_seed = prompt("Enter initial seed: ").strip()
+                except (EOFError, KeyboardInterrupt):
+                    print("\nAborted.")
+                    sys.exit(0)
+                if initial_seed:
+                    break
+                print("Seed cannot be empty.")
 
         self.session_id = f"{now_iso()}_{self.author.replace(' ','_')}"
         self.branch = "main"
         self.description = ""
         self.metadata = self._load_metadata(metadata_paths)
         self.wordlist = self._load_wordlist()
-        self.tree_log = pathlib.Path("seed_tree.jsonl")
+        self.tree_log = pathlib.Path("seed_tree.jsonl")  # Changed to relative path
         self.id_base = str(uuid.uuid4())
         self.id_count = 10
         self.working_seed = self._normalize(initial_seed)
+        self.branch = getattr(self, 'branch', 'main')
         self.prev_working_seed = self.working_seed
         self.up_seed = ""
         self.down_seed = ""
@@ -311,6 +368,7 @@ class TransformEngine:
             print(f"Updated Working Seed: {self.working_seed}")
         else:
             print("Invalid selection.")
+        self._commit_node()  # PATCH: always commit on transform
 
     def phonetic_transform(self):
         c = prompt("Letter for phonetic > ").strip().lower()
@@ -343,6 +401,7 @@ class TransformEngine:
         self.working_seed = s[:pos] + t.target + s[pos+1:]
         self.last_action_method = "phonetic"
         print(f"Updated Working Seed: {self.working_seed}")
+        self._commit_node()  # PATCH: always commit on transform
 
     def acronym_transform(self):
         s = self.working_seed
@@ -372,6 +431,7 @@ class TransformEngine:
             self.working_seed = s[:pos] + t.target + s[pos + len(blk):]
             self.last_action_method = "acronym"
             print(f"Updated Working Seed: {self.working_seed}")
+        self._commit_node()  # PATCH: always commit on transform
 
     def smart_dict_scan(self):
         s = self.working_seed
@@ -381,6 +441,7 @@ class TransformEngine:
         candidates: list = []
         MAX_FRAG_LEN = 6
         MAX_CANDIDATES = 50
+        self._commit_node()  # PATCH: always commit on transform
 
         fragments = set()
         for i in range(len(s)):
@@ -419,6 +480,7 @@ class TransformEngine:
             self.working_seed = s[:pos] + full + s[pos + len(f):]
             self.last_action_method = "dictionary"
             print(f"Updated Working Seed: {self.working_seed}")
+            self._commit_node()  # PATCH: Always log after dictionary transform
 
     def select(self):
         try:
@@ -473,6 +535,7 @@ class TransformEngine:
         if desc:
             self.description = desc
             print(f"Description set for next commit: {desc}")
+        self._commit_node()  # PATCH: always commit on description change
 
     def set_branch(self):
         try:
@@ -533,7 +596,7 @@ Help — SLF Menu Commands:
 [3 enter]        : Enter a new seed (resets state)
 [4 up/add]       : Manually append letters to working seed (Up Seed)
 [5 down/remove]  : Remove letters from working seed (Down Seed)
-[6 lock/commit]  : Commit current node (increments step/ID and logs all details)
+[/commit]  : Commit current node (increments step/ID and logs all details)
 [7 select]       : Switch working seed to Up, Down, or remain (branches log if Up/Down)
 [8 list]         : Print all nodes in the JSONL log
 [9 tree]         : Print log as a tree (parent/child indented)
@@ -542,7 +605,7 @@ Help — SLF Menu Commands:
 [reset]          : Reset working, up, down to current node in log
 [goto]           : Jump to any previous node by ID
 [q quit]         : Quit
-[help]           : Print this help menu
+[help]           : This help menu
 """)
 
     def reverse_transform(self):
@@ -550,8 +613,11 @@ Help — SLF Menu Commands:
         self.working_seed = self.working_seed[::-1]
         self.last_action_method = "reverse"
         print(f"Reversed: {self.working_seed}")
+        self._commit_node()  # PATCH: always commit on transform
 
     def manual_enter_seed(self):
+        if hasattr(self, 'branch'):
+            self.branch = getattr(self, 'branch', 'main')
         try:
             s = prompt("New seed >").strip()
         except (EOFError, KeyboardInterrupt):
@@ -562,6 +628,7 @@ Help — SLF Menu Commands:
             self.working_seed = self._normalize(s)
             self.last_action_method = "manual"
             print(f"New Working Seed: {self.working_seed}")
+        self._commit_node()  # PATCH: always commit on transform
 
     def manual_up_add(self):
         try:
@@ -586,6 +653,7 @@ Help — SLF Menu Commands:
             self.working_seed = s[:pos] + up + s[pos:]
             self.last_action_method = "manual_up"
             print(f"Added (up): {up} at {pos} => {self.working_seed}")
+        self._commit_node()  # PATCH: always commit on transform
 
     def manual_down_remove(self):
         try:
@@ -612,6 +680,7 @@ Help — SLF Menu Commands:
             self.working_seed = s[:pos] + s[pos+1:]
             self.last_action_method = "manual_down"
             print(f"Removed (down): {down} at {pos} => {self.working_seed}")
+        self._commit_node()  # PATCH: always commit on transform
 
     def goto(self):
         nodes = self.load_tree()
@@ -635,6 +704,7 @@ Help — SLF Menu Commands:
             print("Node id not found.")
             return
         n = nodes[goto_id]
+        self.branch = n.get('branch', 'main')
         self.working_seed = n['target']
         self.prev_working_seed = self.working_seed
         self.current_node_id = n['id']
@@ -695,124 +765,47 @@ Help — SLF Menu Commands:
 def interactive_loop(engine: TransformEngine):
     cmds = (
         "[1a sym 1b phon 1c acr 1d dict 1e jump "
-        "2 rev 3 enter 4 up add 5 down remove 6 lock 7 select 8 list 9 tree 10 branch 11 desc reset goto help q quit]> "
+        "2 rev 3 enter 4 up add 5 down remove 7 select 8 list 9 tree 10 branch 11 desc reset goto help q quit]> "
     )
     while True:
-        print(f"\n──────────────")
-        print(f"Work:{engine.working_seed}|Up:{engine.up_seed}|Down:{engine.down_seed}|Node:{engine.current_node_id}|Step:{engine.step}|Branch:{engine.branch}")
+        console.rule("[bold blue]SLF CLI[/bold blue]")
+        show_status(engine)
+        show_menu()
         try:
             cmd = prompt(cmds).strip().lower()
         except (EOFError, KeyboardInterrupt):
-            print("\nSession ended.")
+            console.print("\n[red]Session ended.[/red]")
             break
-        if cmd == '1a': engine.symbolic_transform()
-        elif cmd == '1b': engine.phonetic_transform()
-        elif cmd == '1c': engine.acronym_transform()
-        elif cmd == '1d': engine.smart_dict_scan()
-        elif cmd == '1e': engine.jump_1e()
-        elif cmd == '2': engine.reverse_transform()
-        elif cmd == '3': engine.manual_enter_seed()
-        elif cmd in ('4','up','add'): engine.manual_up_add()
-        elif cmd in ('5','down','remove'): engine.manual_down_remove()
-        elif cmd in ('6','lock','commit'): engine._commit_node()
-        elif cmd in ('7','select'): engine.select()
-        elif cmd in ('8','list'): engine.print_list()
-        elif cmd in ('9','tree'): engine.print_tree()
-        elif cmd in ('10','branch'): engine.set_branch()
-        elif cmd in ('11','desc','description'): engine.add_description()
-        elif cmd == 'reset': engine.reset_working()
-        elif cmd == 'goto': engine.goto()
-        elif cmd == 'help': engine.help()
+        last_output = None
+        if cmd == '1a': last_output = engine.symbolic_transform()
+        elif cmd == '1b': last_output = engine.phonetic_transform()
+        elif cmd == '1c': last_output = engine.acronym_transform()
+        elif cmd == '1d': last_output = engine.smart_dict_scan()
+        elif cmd == '1e': last_output = engine.jump_1e()
+        elif cmd == '2': last_output = engine.reverse_transform()
+        elif cmd == '3': last_output = engine.manual_enter_seed()
+        elif cmd in ('4','up','add'): last_output = engine.manual_up_add()
+        elif cmd in ('5','down','remove'): last_output = engine.manual_down_remove()
+        elif cmd in ('7','select'): last_output = engine.select()
+        elif cmd in ('8','list'): last_output = engine.print_list()
+        elif cmd in ('9','tree'): last_output = engine.print_tree()
+        elif cmd in ('10','branch'): last_output = engine.set_branch()
+        elif cmd in ('11','desc','description'): last_output = engine.add_description()
+        elif cmd == 'reset': last_output = engine.reset_working()
+        elif cmd == 'goto': last_output = engine.goto()
+        elif cmd == 'help': last_output = engine.help()
         elif cmd in ('q','quit'): break
-        else: print("Unknown command.")
+        else: console.print("[red]Unknown command.[/red]")
+        if last_output: print_if_unique(str(last_output))
     engine.close()
+    console.print("[bold green]Bye.[/bold green]")
     print("Bye.")
 
 if __name__ == '__main__':
     ap = argparse.ArgumentParser()
-    ap.add_argument('-m','--metadata', nargs='+', default=['character_transforms.parquet','acronym_transforms.parquet','phonetic_transforms.parquet'])
-    ap.add_argument('-s','--seed', default='')
+    ap.add_argument('-m', '--metadata', nargs='+', default=['character_transforms.parquet', 'acronym_transforms.parquet', 'phonetic_transforms.parquet'])
+    ap.add_argument('-s', '--seed', default='')
+    ap.add_argument('--author', default=None, help='Author name for logging')
     args = ap.parse_args()
-    interactive_loop(TransformEngine(args.metadata, args.seed))
-
-
-# === INTERFACE START ===
-from colorama import Fore, Style, init
-init(autoreset=True)
-import os
-
-def clear_screen():
-    os.system('cls' if os.name == 'nt' else 'clear')
-
-def print_status(engine):
-    print(f"\n{Fore.CYAN}{'═'*40}")
-    print(f"{Fore.GREEN}🌱  SLF Transform Engine — v1.7.4")
-    print(f"{Fore.CYAN}{'═'*40}")
-    print(f"{Fore.YELLOW}🔤 Seed      : {Style.BRIGHT}{engine.working_seed}")
-    print(f"{Fore.BLUE}🔼 Up Seed   : {Style.BRIGHT}{engine.up_seed}")
-    print(f"{Fore.MAGENTA}🔽 Down Seed : {Style.BRIGHT}{engine.down_seed}")
-    branch_info = "← Reverse" if engine.reverse_mode else "→ Forward"
-    print(f"{Fore.LIGHTBLACK_EX}📍 Branch    : {branch_info} {Fore.LIGHTWHITE_EX}| Step {engine.step}")
-    print(f"{Fore.CYAN}{'─'*40}")
-    print(f"{Fore.WHITE}🆔 Node ID   : {Style.BRIGHT}{engine.current_node_id}")
-
-def help():
-    print(f"""
-{Fore.GREEN}{Style.BRIGHT}📘 Help — SLF Menu Commands:{Style.RESET_ALL}
-
-{Fore.YELLOW}{Style.BRIGHT}[1a] Symbolic        {Style.RESET_ALL}→ Parquet letter/meaning transform
-{Fore.YELLOW}{Style.BRIGHT}[1b] Phonetic        {Style.RESET_ALL}→ Phonetic substitutions
-{Fore.YELLOW}{Style.BRIGHT}[1c] Acronym         {Style.RESET_ALL}→ State/company/country/stock mappings
-{Fore.YELLOW}{Style.BRIGHT}[1d] Dictionary Scan {Style.RESET_ALL}→ Wordlist-based fuzzy match
-{Fore.YELLOW}{Style.BRIGHT}[1e] Jump            {Style.RESET_ALL}→ Fast jump to unique targets
-
-{Fore.CYAN}{Style.BRIGHT}[2]  Reverse           {Style.RESET_ALL}→ Reverse the working seed
-{Fore.CYAN}{Style.BRIGHT}[3]  New Seed          {Style.RESET_ALL}→ Enter new root
-{Fore.CYAN}{Style.BRIGHT}[4]  Add (Up)          {Style.RESET_ALL}→ Append letters
-{Fore.CYAN}{Style.BRIGHT}[5]  Remove (Down)     {Style.RESET_ALL}→ Remove letters
-{Fore.CYAN}{Style.BRIGHT}[7]  Select Seed       {Style.RESET_ALL}→ Branch to Up, Down, or stay
-
-{Fore.MAGENTA}{Style.BRIGHT}[8]  List Nodes     {Style.RESET_ALL}→ Full session log
-{Fore.MAGENTA}{Style.BRIGHT}[9]  View Tree      {Style.RESET_ALL}→ Parent-child visual tree
-{Fore.MAGENTA}{Style.BRIGHT}[11] Description    {Style.RESET_ALL}→ Add narrative to next commit
-
-{Fore.RED}{Style.BRIGHT}[goto]  Goto Node       {Style.RESET_ALL}→ Jump to previous ID
-{Fore.RED}{Style.BRIGHT}[q]     Quit            {Style.RESET_ALL}→ Exit the engine
-""")
-
-def interactive_loop(engine):
-    cmds = (
-        f"{Style.BRIGHT}[1a sym 1b phon 1c acr 1d dict 1e jump "
-        f"2 rev 3 enter 4 up add 5 down remove 7 select 8 list 9 tree 11 desc goto help q quit]{Style.RESET_ALL}> "
-    )
-    while True:
-        clear_screen()
-        print_status(engine)
-        try:
-            cmd = input(Fore.LIGHTCYAN_EX + cmds + Style.RESET_ALL).strip().lower()
-        except (EOFError, KeyboardInterrupt):
-            print("\nSession ended.")
-            break
-
-        if cmd == '1a': engine.symbolic_transform()
-        elif cmd == '1b': engine.phonetic_transform()
-        elif cmd == '1c': engine.acronym_transform()
-        elif cmd == '1d': engine.smart_dict_scan()
-        elif cmd == '1e': engine.jump_1e()
-        elif cmd == '2': engine.reverse_transform()
-        elif cmd == '3': engine.manual_enter_seed()
-        elif cmd in ('4','up','add'): engine.manual_up_add()
-        elif cmd in ('5','down','remove'): engine.manual_down_remove()
-        elif cmd in ('7','select'): engine.select()
-        elif cmd in ('8','list'): engine.print_list()
-        elif cmd in ('9','tree'): engine.print_tree()
-        elif cmd in ('11','desc','description'): engine.add_description()
-        elif cmd == 'goto': engine.goto()
-        elif cmd == 'help': help()
-        elif cmd in ('q','quit'): break
-        else: print(f"{Fore.RED}Unknown command.{Style.RESET_ALL}")
-
-        engine._commit_node()
-
-    engine.close()
-    print("Bye.")
+    engine = TransformEngine(args.metadata, args.seed, args.author)
+    interactive_loop(engine)
